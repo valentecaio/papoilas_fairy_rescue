@@ -61,7 +61,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 15)
 current = true
 fov = 110.0
 script = ExtResource("1_35l0t")
-distance = 25
+distance = 35
 
 [node name="Ground" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_m65kf")
@@ -69,7 +69,7 @@ mesh = SubResource("PlaneMesh_m65kf")
 [node name="Tower" type="Node" parent="."]
 
 [node name="Base" type="MeshInstance3D" parent="Tower"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.0226, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 41.1825, 0)
 mesh = SubResource("CylinderMesh_hkuky")
 skeleton = NodePath("../..")
 
