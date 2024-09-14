@@ -204,7 +204,7 @@ animation = &"jump"
 autoplay = "idle"
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(256, -12)
+position = Vector2(1024, -12)
 sprite_frames = SubResource("SpriteFrames_ipo77")
 animation = &"jump"
 autoplay = "idle"
@@ -214,5 +214,5 @@ position = Vector2(0, -6)
 shape = SubResource("CircleShape2D_kxc40")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(256, -6)
+position = Vector2(1024, -6)
 shape = SubResource("CircleShape2D_kxc40")

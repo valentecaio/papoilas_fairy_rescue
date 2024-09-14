@@ -16,7 +16,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_stage_2d_player_position_changed(cur_player_pos):
-    var angle = deg_to_rad(cur_player_pos.x * 360.0 / 256)
+    var angle = deg_to_rad(cur_player_pos.x * 360.0 / 1024)
     #print(cur_player_pos, " ", rad_to_deg(angle))
     position.x = distance * sin(angle)
     position.z = distance * cos(angle)
