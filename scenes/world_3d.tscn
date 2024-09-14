@@ -37,9 +37,9 @@ texture_filter = 0
 resource_local_to_scene = true
 lightmap_size_hint = Vector2i(96, 74)
 material = SubResource("StandardMaterial3D_nalp2")
-top_radius = 6.0
-bottom_radius = 6.0
-height = 24.0
+top_radius = 12.0
+bottom_radius = 12.0
+height = 75.398
 cap_bottom = false
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_kwur7"]
@@ -57,19 +57,19 @@ transform = Transform3D(-0.340085, -0.605822, 0.719251, 0.194374, 0.703039, 0.68
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0.000545897, -0.000309174, -0.000545416, 0.999999, 0.00155371, 0.000310022, -0.00155354, 0.999999, 0, 9.63406, 15.1992)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 15)
 current = true
-fov = 85.0
+fov = 92.9
 script = ExtResource("1_35l0t")
+distance = 25
 
 [node name="Ground" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.89985, 0.0459857, -0.0320525)
 mesh = SubResource("PlaneMesh_m65kf")
 
 [node name="Tower" type="Node" parent="."]
 
 [node name="Base" type="MeshInstance3D" parent="Tower"]
-transform = Transform3D(-0.923879, 0, -0.382683, 0, 1, 0, 0.382683, 0, -0.923879, 0, 13.028, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 37.6301, 0)
 mesh = SubResource("CylinderMesh_hkuky")
 skeleton = NodePath("../..")
 
@@ -85,3 +85,5 @@ size = Vector2i(256, 512)
 transform = Transform3D(0.999973, 0.00481498, -0.00559637, -0.00479705, 0.999983, 0.00321236, 0.00561175, -0.00318543, 0.999979, 0, 8.58776, 0)
 mesh = SubResource("CylinderMesh_kwur7")
 skeleton = NodePath("../..")
+
+[connection signal="player_position_changed" from="Tower/Stage2DSubViewport/Stage2D" to="Camera3D" method="_on_stage_2d_player_position_changed"]

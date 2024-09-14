@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=4 uid="uid://ba0m0bkv10ote"]
+[gd_scene load_steps=9 format=4 uid="uid://ba0m0bkv10ote"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_564ds"]
+[ext_resource type="Script" path="res://scenes/stage_2d.gd" id="1_mqtmd"]
 [ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_r5agi"]
 [ext_resource type="PackedScene" path="res://scenes/player.tscn" id="3_77ans"]
 [ext_resource type="PackedScene" uid="uid://bwltm8xcx2pg1" path="res://scenes/coin.tscn" id="4_thyb8"]
@@ -173,14 +174,18 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fxd8l")
 
 [node name="Stage2D" type="Node2D"]
-
-[node name="Camera2D" type="Camera2D" parent="."]
-anchor_mode = 0
-position_smoothing_enabled = true
+script = ExtResource("1_mqtmd")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("1_564ds")
+
+[node name="Player" parent="." instance=ExtResource("3_77ans")]
+position = Vector2(120, 159)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+position_smoothing_enabled = true
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 position = Vector2(48, 144)
@@ -194,9 +199,6 @@ tile_set = SubResource("TileSet_mhwei")
 use_parent_material = true
 tile_map_data = PackedByteArray("AAD//wIAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAJAP//AAAAAAAAAAAKAP//AAAAAAAAAAADAPz/AAAAAAEAAAAEAPz/AAABAAAAAAD//wMAAAAAAAEAAAAAAAMAAAAAAAEAAAABAAMAAAAAAAEAAAADAAIAAAAAAAEAAAAEAAIAAAAAAAEAAAAGAAEAAAAAAAEAAAAHAAEAAAAAAAEAAAAJAAAAAAAAAAEAAAAKAAAAAAAAAAEAAAAFAPz/AAAAAAAAAAAGAPz/AAAAAAAAAAAHAPz/AAAAAAAAAAAKAPz/AAAFAAMAAAAKAP3/AAAFAAQAAAAKAP7/AAAFAAUAAAABAP//AAAGAAMAAAABAAAAAAAGAAQAAAABAAEAAAAGAAUAAAAGAPn/AAAGAAMAAAAGAPr/AAAGAAQAAAAGAPv/AAAGAAUAAAD+//z/AAAAAAEAAAD///z/AAABAAAAAAAAAPz/AAAAAAEAAAD+//v/AAAAAAAAAAD+//3/AAAAAAEAAAD///3/AAAAAAEAAAAAAP3/AAAAAAEAAAABAPz/AAAAAAEAAAACAPz/AAAAAAEAAAAEAPv/AAAAAAAAAAAEAP3/AAAAAAEAAAABAP3/AAABAAAAAAACAP3/AAAAAAEAAAADAP3/AAAAAAEAAAACAAIAAAAAAAAAAAAFAAEAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_mhwei")
-
-[node name="Player" parent="." instance=ExtResource("3_77ans")]
-position = Vector2(120, 159)
 
 [node name="Coins" type="Node" parent="."]
 
