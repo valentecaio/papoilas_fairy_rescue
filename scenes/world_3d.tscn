@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://cusy3nt63e46e"]
+
+[ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p0lj1"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_dimwk"]
+sky_material = SubResource("ProceduralSkyMaterial_p0lj1")
+
+[sub_resource type="Environment" id="Environment_vmnr1"]
+background_mode = 2
+sky = SubResource("Sky_dimwk")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndc6u"]
+albedo_color = Color(0, 0.4, 0.08, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_m65kf"]
+material = SubResource("StandardMaterial3D_ndc6u")
+size = Vector2(1000, 1000)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_hkuky"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kwur7"]
+top_radius = 0.0
+bottom_radius = 0.7
+height = 1.595
+
+[node name="World3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vmnr1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.340085, -0.605822, 0.719251, 0.194374, 0.703039, 0.684073, -0.920088, 0.372446, -0.121337, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.10846, 4)
+script = ExtResource("1_35l0t")
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.89985, 0.0459857, -0.0320525)
+mesh = SubResource("PlaneMesh_m65kf")
+
+[node name="Tower" type="Node" parent="."]
+
+[node name="Base" type="MeshInstance3D" parent="Tower"]
+transform = Transform3D(1, 0, 0, 0, 2.11068, 0, 0, 0, 1, -0.0146818, 2.14653, 0.00802088)
+mesh = SubResource("CylinderMesh_hkuky")
+skeleton = NodePath("../..")
+
+[node name="Roof" type="MeshInstance3D" parent="Tower"]
+transform = Transform3D(0.999973, 0.00481498, -0.00559637, -0.00479705, 0.999983, 0.00321236, 0.00561175, -0.00318543, 0.999979, 0, 5.022, 0)
+mesh = SubResource("CylinderMesh_kwur7")
+skeleton = NodePath("../..")
