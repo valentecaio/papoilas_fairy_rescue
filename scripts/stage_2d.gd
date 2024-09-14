@@ -1,4 +1,4 @@
-extends Node2D
+class_name Stage2D extends Node2D
 
 @onready var player = $Player
 

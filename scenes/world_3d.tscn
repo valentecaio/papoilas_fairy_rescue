@@ -59,9 +59,9 @@ shadow_enabled = true
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 15)
 current = true
-fov = 92.9
+fov = 118.3
 script = ExtResource("1_35l0t")
-distance = 25
+distance = 70
 
 [node name="Ground" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_m65kf")
@@ -69,7 +69,7 @@ mesh = SubResource("PlaneMesh_m65kf")
 [node name="Tower" type="Node" parent="."]
 
 [node name="Base" type="MeshInstance3D" parent="Tower"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 37.6301, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.0226, 0)
 mesh = SubResource("CylinderMesh_hkuky")
 skeleton = NodePath("../..")
 
@@ -85,5 +85,3 @@ size = Vector2i(256, 512)
 transform = Transform3D(0.999973, 0.00481498, -0.00559637, -0.00479705, 0.999983, 0.00321236, 0.00561175, -0.00318543, 0.999979, 0, 8.58776, 0)
 mesh = SubResource("CylinderMesh_kwur7")
 skeleton = NodePath("../..")
-
-[connection signal="player_position_changed" from="Tower/Stage2DSubViewport/Stage2D" to="Camera3D" method="_on_stage_2d_player_position_changed"]

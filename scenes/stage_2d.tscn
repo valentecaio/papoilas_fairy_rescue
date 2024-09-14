@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=4 uid="uid://ba0m0bkv10ote"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_564ds"]
-[ext_resource type="Script" path="res://scenes/stage_2d.gd" id="1_mqtmd"]
+[ext_resource type="Script" path="res://scripts/stage_2d.gd" id="1_sfhyn"]
 [ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_r5agi"]
-[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="3_77ans"]
+[ext_resource type="PackedScene" uid="uid://cx0q67s3furhs" path="res://scenes/player.tscn" id="3_77ans"]
 [ext_resource type="PackedScene" uid="uid://bwltm8xcx2pg1" path="res://scenes/coin.tscn" id="4_thyb8"]
 [ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="5_upfow"]
 
@@ -174,7 +174,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fxd8l")
 
 [node name="Stage2D" type="Node2D"]
-script = ExtResource("1_mqtmd")
+script = ExtResource("1_sfhyn")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
