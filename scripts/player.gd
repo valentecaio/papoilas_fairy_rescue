@@ -8,6 +8,7 @@ const JUMP_VELOCITY = -300.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
+@onready var animated_sprite_2d_2: AnimatedSprite2D = $AnimatedSprite2D2
 
 func _physics_process(delta):
   # gravity.
@@ -24,6 +25,7 @@ func _physics_process(delta):
   # move left/right (and flip animation)
   if direction:
     animated_sprite_2d.flip_h = direction < 0
+    animated_sprite_2d_2.flip_h = direction < 0
     velocity.x = direction * SPEED
   else:
     velocity.x = move_toward(velocity.x, 0, SPEED)
@@ -32,9 +34,18 @@ func _physics_process(delta):
   if is_on_floor():
     if direction == 0:
       animated_sprite_2d.play("idle")
+      animated_sprite_2d_2.play("idle")
     else:
       animated_sprite_2d.play("run")
+      animated_sprite_2d_2.play("run")
   else:
     animated_sprite_2d.play("jump")
+    animated_sprite_2d_2.play("jump")
 
   move_and_slide()
+
+  if (position.x > 138):
+    position.x -= 256
+    
+  if (position.x < -138):
+    position.x += 256

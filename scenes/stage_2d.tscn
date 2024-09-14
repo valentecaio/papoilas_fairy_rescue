@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_564ds"]
 [ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_r5agi"]
-[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="3_77ans"]
+[ext_resource type="PackedScene" uid="uid://bouo1wdries3t" path="res://scenes/player.tscn" id="3_77ans"]
 [ext_resource type="PackedScene" path="res://scenes/coin.tscn" id="4_thyb8"]
 [ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="5_upfow"]
 
@@ -175,7 +175,13 @@ sources/0 = SubResource("TileSetAtlasSource_fxd8l")
 [node name="Stage2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 anchor_mode = 0
+position_smoothing_enabled = true
+
+[node name="DebugCamera" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
 [node name="GameManager" type="Node" parent="."]
@@ -195,7 +201,7 @@ tile_map_data = PackedByteArray("AAAFAAoAAAAHAAMAAAAIAAQAAAAIAAEAAAAIAAUAAAAIAAE
 tile_set = SubResource("TileSet_mhwei")
 
 [node name="Player" parent="." instance=ExtResource("3_77ans")]
-position = Vector2(22, 235)
+position = Vector2(13, 231)
 
 [node name="Coins" type="Node" parent="."]
 

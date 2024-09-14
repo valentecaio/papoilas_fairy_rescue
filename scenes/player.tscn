@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cx0q67s3furhs"]
+[gd_scene load_steps=29 format=3 uid="uid://bouo1wdries3t"]
 
 [ext_resource type="Texture2D" uid="uid://qfqapsbdu22y" path="res://assets/sprites/knight.png" id="1_hi5q7"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_o3slr"]
@@ -203,6 +203,16 @@ sprite_frames = SubResource("SpriteFrames_ipo77")
 animation = &"jump"
 autoplay = "idle"
 
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(256, -12)
+sprite_frames = SubResource("SpriteFrames_ipo77")
+animation = &"jump"
+autoplay = "idle"
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_kxc40")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(256, -6)
 shape = SubResource("CircleShape2D_kxc40")
