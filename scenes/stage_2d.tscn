@@ -1,13 +1,13 @@
-[gd_scene load_steps=8 format=4 uid="uid://ctueedjygy1w1"]
+[gd_scene load_steps=8 format=4 uid="uid://ba0m0bkv10ote"]
 
-[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_fih6q"]
-[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="1_vg3jj"]
-[ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_dqcmx"]
-[ext_resource type="PackedScene" uid="uid://bwltm8xcx2pg1" path="res://scenes/coin.tscn" id="4_ldh4f"]
-[ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="6_k6f4f"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_564ds"]
+[ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_r5agi"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="3_77ans"]
+[ext_resource type="PackedScene" uid="uid://bwltm8xcx2pg1" path="res://scenes/coin.tscn" id="4_thyb8"]
+[ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="5_upfow"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fxd8l"]
-texture = ExtResource("2_dqcmx")
+texture = ExtResource("2_r5agi")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -172,7 +172,7 @@ texture = ExtResource("2_dqcmx")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fxd8l")
 
-[node name="Game" type="Node2D"]
+[node name="Stage2D" type="Node2D"]
 position = Vector2(213, 2)
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -183,7 +183,7 @@ position_smoothing_enabled = true
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("1_fih6q")
+script = ExtResource("1_564ds")
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 position = Vector2(-51, -18)
@@ -197,21 +197,21 @@ use_parent_material = true
 tile_map_data = PackedByteArray("AAD//wIAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAJAP//AAAAAAAAAAAKAP//AAAAAAAAAAADAPz/AAAAAAEAAAAEAPz/AAABAAAAAAD//wMAAAAAAAEAAAAAAAMAAAAAAAEAAAABAAMAAAAAAAEAAAADAAIAAAAAAAEAAAAEAAIAAAAAAAEAAAAGAAEAAAAAAAEAAAAHAAEAAAAAAAEAAAAJAAAAAAAAAAEAAAAKAAAAAAAAAAEAAAAFAPz/AAAAAAAAAAAGAPz/AAAAAAAAAAAHAPz/AAAAAAAAAAAKAPz/AAAFAAMAAAAKAP3/AAAFAAQAAAAKAP7/AAAFAAUAAAABAP//AAAGAAMAAAABAAAAAAAGAAQAAAABAAEAAAAGAAUAAAAGAPn/AAAGAAMAAAAGAPr/AAAGAAQAAAAGAPv/AAAGAAUAAAD+//z/AAAAAAEAAAD///z/AAABAAAAAAAAAPz/AAAAAAEAAAD+//v/AAAAAAAAAAD+//3/AAAAAAEAAAD///3/AAAAAAEAAAAAAP3/AAAAAAEAAAABAPz/AAAAAAEAAAACAPz/AAAAAAEAAAAEAPv/AAAAAAAAAAAEAP3/AAAAAAEAAAABAP3/AAABAAAAAAACAP3/AAAAAAEAAAADAP3/AAAAAAEAAAA=")
 tile_set = SubResource("TileSet_mhwei")
 
-[node name="Player" parent="." instance=ExtResource("1_vg3jj")]
+[node name="Player" parent="." instance=ExtResource("3_77ans")]
 position = Vector2(-58, 14)
 
 [node name="Coins" type="Node" parent="."]
 
-[node name="Coin" parent="Coins" instance=ExtResource("4_ldh4f")]
+[node name="Coin" parent="Coins" instance=ExtResource("4_thyb8")]
 position = Vector2(218, -14)
 
-[node name="Coin2" parent="Coins" instance=ExtResource("4_ldh4f")]
+[node name="Coin2" parent="Coins" instance=ExtResource("4_thyb8")]
 position = Vector2(265, -31)
 
-[node name="Coin3" parent="Coins" instance=ExtResource("4_ldh4f")]
+[node name="Coin3" parent="Coins" instance=ExtResource("4_thyb8")]
 position = Vector2(251, -93)
 
 [node name="Enemies" type="Node" parent="."]
 
-[node name="Slime" parent="Enemies" instance=ExtResource("6_k6f4f")]
+[node name="Slime" parent="Enemies" instance=ExtResource("5_upfow")]
 position = Vector2(170, -92)
