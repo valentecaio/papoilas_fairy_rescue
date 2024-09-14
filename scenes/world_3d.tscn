@@ -59,9 +59,9 @@ shadow_enabled = true
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 15)
 current = true
-fov = 118.3
+fov = 110.0
 script = ExtResource("1_35l0t")
-distance = 70
+distance = 25
 
 [node name="Ground" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_m65kf")
