@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://cusy3nt63e46e"]
+[gd_scene load_steps=12 format=3 uid="uid://cusy3nt63e46e"]
 
 [ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
+[ext_resource type="PackedScene" uid="uid://ks8xnba7nkih" path="res://scenes/stage_2d.tscn" id="2_5spc5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p0lj1"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -22,7 +23,19 @@ albedo_color = Color(0, 0.4, 0.08, 1)
 material = SubResource("StandardMaterial3D_ndc6u")
 size = Vector2(1000, 1000)
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_iqrn1"]
+viewport_path = NodePath("Tower/Stage2DSubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nalp2"]
+resource_local_to_scene = true
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_iqrn1")
+albedo_texture_force_srgb = true
+texture_filter = 0
+
 [sub_resource type="CylinderMesh" id="CylinderMesh_hkuky"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_nalp2")
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_kwur7"]
 top_radius = 0.0
@@ -39,7 +52,8 @@ transform = Transform3D(-0.340085, -0.605822, 0.719251, 0.194374, 0.703039, 0.68
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.10846, 4)
+transform = Transform3D(1, 0.000545906, -0.000309158, -0.000545416, 0.999999, 0.00155371, 0.000310022, -0.00155354, 0.999999, 0, 3.10846, 4)
+current = true
 script = ExtResource("1_35l0t")
 
 [node name="Ground" type="MeshInstance3D" parent="."]
@@ -49,9 +63,15 @@ mesh = SubResource("PlaneMesh_m65kf")
 [node name="Tower" type="Node" parent="."]
 
 [node name="Base" type="MeshInstance3D" parent="Tower"]
-transform = Transform3D(1, 0, 0, 0, 2.11068, 0, 0, 0, 1, -0.0146818, 2.14653, 0.00802088)
+transform = Transform3D(-0.592614, 0.00285647, -0.805486, 0.000992154, 2.11068, 0.000950204, 0.805486, -0.00049825, -0.592614, -0.0146818, 2.14653, 0.00802088)
 mesh = SubResource("CylinderMesh_hkuky")
 skeleton = NodePath("../..")
+
+[node name="Stage2DSubViewport" type="SubViewport" parent="Tower"]
+disable_3d = true
+canvas_item_default_texture_filter = 0
+
+[node name="Stage2D" parent="Tower/Stage2DSubViewport" instance=ExtResource("2_5spc5")]
 
 [node name="Roof" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(0.999973, 0.00481498, -0.00559637, -0.00479705, 0.999983, 0.00321236, 0.00561175, -0.00318543, 0.999979, 0, 5.022, 0)
