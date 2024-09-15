@@ -1,21 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://cusy3nt63e46e"]
+[gd_scene load_steps=17 format=3 uid="uid://cusy3nt63e46e"]
 
 [ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
 [ext_resource type="PackedScene" uid="uid://ks8xnba7nkih" path="res://scenes/stage_2d.tscn" id="2_5spc5"]
 [ext_resource type="Shader" path="res://assets/shaders/wall.gdshader" id="2_lwkpp"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p0lj1"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-
-[sub_resource type="Sky" id="Sky_dimwk"]
-sky_material = SubResource("ProceduralSkyMaterial_p0lj1")
-
-[sub_resource type="Environment" id="Environment_vmnr1"]
-background_mode = 2
-sky = SubResource("Sky_dimwk")
-tonemap_mode = 2
-glow_enabled = true
+[ext_resource type="Texture2D" uid="uid://ygugoietlv5q" path="res://assets/shaders/seaworn_sandstone_brick_diff_1k.jpg" id="3_amijh"]
+[ext_resource type="Texture2D" uid="uid://cjao7rqnlr1ct" path="res://assets/shaders/seaworn_sandstone_brick_disp_1k.png" id="4_o8v3r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndc6u"]
 albedo_color = Color(0, 0.4, 0.08, 1)
@@ -24,50 +13,11 @@ albedo_color = Color(0, 0.4, 0.08, 1)
 material = SubResource("StandardMaterial3D_ndc6u")
 size = Vector2(1000, 1000)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ufvxp"]
-render_priority = 0
-shader = ExtResource("2_lwkpp")
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_wx5pc"]
-material = SubResource("ShaderMaterial_ufvxp")
-top_radius = 26.0
-bottom_radius = 26.0
-height = 50.0
-cap_top = false
-cap_bottom = false
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_0g4q3"]
-render_priority = 0
-shader = ExtResource("2_lwkpp")
-
 [sub_resource type="BoxMesh" id="BoxMesh_1daek"]
-material = SubResource("ShaderMaterial_0g4q3")
 size = Vector3(10, 2, 5)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_iqrn1"]
 viewport_path = NodePath("Tower/Stage2DSubViewport")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nalp2"]
-resource_local_to_scene = true
-transparency = 2
-alpha_scissor_threshold = 0.5
-alpha_antialiasing_mode = 0
-shading_mode = 0
-albedo_texture = SubResource("ViewportTexture_iqrn1")
-albedo_texture_force_srgb = true
-uv1_offset = Vector3(1, 1, 0)
-uv2_offset = Vector3(0, 1, 0)
-texture_filter = 0
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_cupiy"]
-resource_local_to_scene = true
-lightmap_size_hint = Vector2i(96, 74)
-material = SubResource("StandardMaterial3D_nalp2")
-top_radius = 25.0
-bottom_radius = 25.0
-height = 50.0
-cap_top = false
-cap_bottom = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vtimk"]
 resource_local_to_scene = true
@@ -85,9 +35,49 @@ texture_filter = 0
 resource_local_to_scene = true
 lightmap_size_hint = Vector2i(96, 74)
 material = SubResource("StandardMaterial3D_vtimk")
-top_radius = 24.75
-bottom_radius = 24.75
+top_radius = 24.25
+bottom_radius = 24.25
 height = 50.0
+cap_top = false
+cap_bottom = false
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nalp2"]
+resource_local_to_scene = true
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_iqrn1")
+albedo_texture_force_srgb = true
+uv1_offset = Vector3(1, 1, 0)
+uv2_offset = Vector3(0, 1, 0)
+texture_filter = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_cupiy"]
+resource_local_to_scene = true
+lightmap_size_hint = Vector2i(96, 74)
+material = SubResource("StandardMaterial3D_nalp2")
+top_radius = 24.5
+bottom_radius = 24.5
+height = 50.0
+cap_top = false
+cap_bottom = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ufvxp"]
+render_priority = 0
+shader = ExtResource("2_lwkpp")
+shader_parameter/current_center_uv = 0.0
+shader_parameter/albedo_map = ExtResource("3_amijh")
+shader_parameter/disp_map = ExtResource("4_o8v3r")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wx5pc"]
+material = SubResource("ShaderMaterial_ufvxp")
+custom_aabb = AABB(0, 0, 0, 0.04, 0, 0)
+top_radius = 26.0
+bottom_radius = 26.0
+height = 50.0
+radial_segments = 256
+rings = 256
 cap_top = false
 cap_bottom = false
 
@@ -98,13 +88,6 @@ height = 1.595
 
 [node name="World3D" type="Node3D"]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_vmnr1")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.340085, -0.605822, 0.719251, 0.194374, 0.703039, 0.684073, -0.920088, 0.372446, -0.121337, 0, 0, 0)
-shadow_enabled = true
-
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 15)
 current = true
@@ -112,28 +95,37 @@ fov = 95.0
 script = ExtResource("1_35l0t")
 distance = 35
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+shadow_enabled = true
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="Camera3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+shadow_enabled = true
+
 [node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.173965, 0)
 mesh = SubResource("PlaneMesh_m65kf")
 
 [node name="Tower" type="Node" parent="."]
 
-[node name="Wall" type="MeshInstance3D" parent="Tower"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 0)
-mesh = SubResource("CylinderMesh_wx5pc")
-
 [node name="Balcony" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000597239, 39.2151, -28.0097)
 mesh = SubResource("BoxMesh_1daek")
+
+[node name="Base2" type="MeshInstance3D" parent="Tower"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 0)
+mesh = SubResource("CylinderMesh_hkuky")
+skeleton = NodePath("../..")
 
 [node name="Base" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 0)
 mesh = SubResource("CylinderMesh_cupiy")
 skeleton = NodePath("../..")
 
-[node name="Base2" type="MeshInstance3D" parent="Tower"]
+[node name="Wall" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 0)
-mesh = SubResource("CylinderMesh_hkuky")
-skeleton = NodePath("../..")
+mesh = SubResource("CylinderMesh_wx5pc")
 
 [node name="Stage2DSubViewport" type="SubViewport" parent="Tower"]
 disable_3d = true
