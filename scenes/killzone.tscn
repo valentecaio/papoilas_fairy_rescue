@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://scripts/killzone.gd" id="1_567s7"]
 
 [node name="Killzone" type="Area2D"]
+collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_567s7")
 

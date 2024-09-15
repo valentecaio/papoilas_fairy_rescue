@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dela2ruhypqns"]
+[gd_scene load_steps=10 format=3 uid="uid://bt4p6w5jg6ebd"]
 
 [ext_resource type="Texture2D" uid="uid://is54t4w45okw" path="res://assets/sprites/slime_green.png" id="1_yk300"]
 [ext_resource type="PackedScene" uid="uid://c85r26su1qgfe" path="res://scenes/killzone.tscn" id="2_1d2t4"]
@@ -42,15 +42,29 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2vwu4"]
 size = Vector2(12, 13)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u71ef"]
+size = Vector2(10, 2)
+
 [node name="Slime" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_t2xfh")
 autoplay = "default"
-frame_progress = 0.705069
 
 [node name="Killzone" parent="." instance=ExtResource("2_1d2t4")]
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(0, 5.5)
 shape = SubResource("RectangleShape2D_2vwu4")
+debug_color = Color(0.996078, 0, 0, 0.337255)
+
+[node name="Jumpzone" type="Area2D" parent="."]
+collision_layer = 256
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jumpzone"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_u71ef")
+debug_color = Color(0, 0.637695, 0.388693, 0.42)
+
+[connection signal="body_entered" from="Jumpzone" to="." method="_on_jumpzone_body_entered"]

@@ -1,7 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://cusy3nt63e46e"]
+[gd_scene load_steps=19 format=3 uid="uid://d0xypoxt833e5"]
 
 [ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
-[ext_resource type="PackedScene" uid="uid://ks8xnba7nkih" path="res://scenes/stage_2d.tscn" id="2_5spc5"]
+[ext_resource type="PackedScene" uid="uid://ba0m0bkv10ote" path="res://scenes/stage_2d.tscn" id="2_5spc5"]
 [ext_resource type="Shader" path="res://assets/shaders/wall.gdshader" id="2_lwkpp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p0lj1"]

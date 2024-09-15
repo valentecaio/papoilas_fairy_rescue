@@ -52,6 +52,13 @@ turn_right={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="stage"
+2d_physics/layer_2="player"
+2d_physics/layer_3="killzones"
+2d_physics/layer_9="jumpzones"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

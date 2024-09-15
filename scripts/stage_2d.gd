@@ -4,5 +4,5 @@ class_name Stage2D extends Node2D
 
 signal player_position_changed(cur_player_pos)
 
-func _process(delta):
-    emit_signal("player_position_changed", player.position)
+func _process(_delta):
+    player_position_changed.emit(player.position)

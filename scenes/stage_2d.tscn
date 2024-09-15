@@ -1,11 +1,11 @@
-[gd_scene load_steps=9 format=4 uid="uid://ks8xnba7nkih"]
+[gd_scene load_steps=9 format=4 uid="uid://ba0m0bkv10ote"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_564ds"]
 [ext_resource type="Script" path="res://scripts/stage_2d.gd" id="1_sfhyn"]
 [ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_r5agi"]
-[ext_resource type="PackedScene" uid="uid://bouo1wdries3t" path="res://scenes/player.tscn" id="3_77ans"]
-[ext_resource type="PackedScene" path="res://scenes/coin.tscn" id="4_thyb8"]
-[ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="5_upfow"]
+[ext_resource type="PackedScene" uid="uid://cx0q67s3furhs" path="res://scenes/player.tscn" id="3_77ans"]
+[ext_resource type="PackedScene" uid="uid://bwltm8xcx2pg1" path="res://scenes/coin.tscn" id="4_thyb8"]
+[ext_resource type="PackedScene" uid="uid://dw3uunn3h3bxf" path="res://scenes/slime.tscn" id="5_upfow"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fxd8l"]
 texture = ExtResource("2_r5agi")
