@@ -54,6 +54,6 @@ func _physics_process(delta):
   if (position.x < -threshold):
     position.x += stage_w
 
-# bump when jumping on an enemy
-func bump():
+# bounce when jumping on an enemy
+func bounce():
   velocity.y = 0.75 * jump_velocity

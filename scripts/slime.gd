@@ -25,8 +25,7 @@ func _process(delta):
 
 
 func _on_jumpzone_body_entered(body):
-    print("_on_jumpzone_body_entered ")
-
-    body.bump()
-    # TODO: play death animation
-    queue_free()
+    if body.has_method("bounce"):
+        body.bounce()
+        # TODO: play death animation
+        queue_free()
