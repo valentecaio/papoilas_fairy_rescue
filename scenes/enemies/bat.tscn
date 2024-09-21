@@ -1,0 +1,100 @@
+[gd_scene load_steps=12 format=3 uid="uid://ddxaqywbhxhe6"]
+
+[ext_resource type="Texture2D" uid="uid://d0bo18lk6dg0b" path="res://assets/sprites/whimsy_hallow_dungeon/bat.png" id="1_d4njq"]
+[ext_resource type="Script" path="res://scripts/enemies/bat.gd" id="1_x2tb8"]
+[ext_resource type="PackedScene" uid="uid://c85r26su1qgfe" path="res://scenes/enemies/killzone.tscn" id="2_agbqc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_387oq"]
+atlas = ExtResource("1_d4njq")
+region = Rect2(2, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sb3vt"]
+atlas = ExtResource("1_d4njq")
+region = Rect2(67, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pqoo"]
+atlas = ExtResource("1_d4njq")
+region = Rect2(132, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_juid1"]
+atlas = ExtResource("1_d4njq")
+region = Rect2(197, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5nto"]
+atlas = ExtResource("1_d4njq")
+region = Rect2(262, 2, 62, 62)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pvjjo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_387oq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sb3vt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pqoo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_juid1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5nto")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sb3vt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5nto")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sb3vt")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4cyl2"]
+size = Vector2(16, 1)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_322lt"]
+radius = 4.0
+height = 18.0
+
+[node name="Bat" type="Node2D"]
+script = ExtResource("1_x2tb8")
+
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pvjjo")
+autoplay = "default"
+
+[node name="RayCast1" type="RayCast2D" parent="."]
+target_position = Vector2(0, 6)
+
+[node name="RayCast2" type="RayCast2D" parent="."]
+target_position = Vector2(0, -9)
+
+[node name="Jumpzone" type="Area2D" parent="."]
+collision_layer = 256
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jumpzone"]
+position = Vector2(0, -7.25)
+shape = SubResource("RectangleShape2D_4cyl2")
+debug_color = Color(0, 1, 0, 0.196078)
+
+[node name="Killzone" parent="." instance=ExtResource("2_agbqc")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_322lt")
+debug_color = Color(1, 0, 0, 0.196078)
+
+[connection signal="body_entered" from="Jumpzone" to="." method="_on_jumpzone_body_entered"]

@@ -1,0 +1,98 @@
+[gd_scene load_steps=12 format=3 uid="uid://clm2nclhrbmmm"]
+
+[ext_resource type="Texture2D" uid="uid://4ll47lsk5crf" path="res://assets/sprites/whimsy_hallow_dungeon/demon_jr.png" id="1_h85ip"]
+[ext_resource type="Script" path="res://scripts/enemies/demon_jr.gd" id="1_o1uk5"]
+[ext_resource type="PackedScene" uid="uid://c85r26su1qgfe" path="res://scenes/enemies/killzone.tscn" id="2_q5brd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1re6r"]
+atlas = ExtResource("1_h85ip")
+region = Rect2(197, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1bp3"]
+atlas = ExtResource("1_h85ip")
+region = Rect2(2, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnlrt"]
+atlas = ExtResource("1_h85ip")
+region = Rect2(67, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c66xv"]
+atlas = ExtResource("1_h85ip")
+region = Rect2(132, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oef1q"]
+atlas = ExtResource("1_h85ip")
+region = Rect2(262, 2, 62, 62)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xnqcg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1re6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i1bp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnlrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c66xv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oef1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1re6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oef1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1re6r")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t75qw"]
+size = Vector2(10, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bi1qh"]
+radius = 6.08276
+
+[node name="DemonJr" type="CharacterBody2D"]
+collision_layer = 8
+script = ExtResource("1_o1uk5")
+
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xnqcg")
+autoplay = "default"
+
+[node name="RayCast1" type="RayCast2D" parent="."]
+target_position = Vector2(7, 0)
+
+[node name="RayCast2" type="RayCast2D" parent="."]
+target_position = Vector2(-8, 0)
+
+[node name="Jumpzone" type="Area2D" parent="."]
+collision_layer = 256
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jumpzone"]
+position = Vector2(-1, -10)
+shape = SubResource("RectangleShape2D_t75qw")
+debug_color = Color(0, 1, 0, 0.196078)
+
+[node name="Killzone" parent="." instance=ExtResource("2_q5brd")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-1, -1)
+shape = SubResource("CircleShape2D_bi1qh")
+debug_color = Color(1, 0, 0, 0.196078)
