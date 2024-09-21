@@ -1,15 +1,16 @@
 shader_type spatial;
 //render_mode unshaded;
 uniform float current_center_uv;
+uniform float uv_margin = 0.05;
 uniform sampler2D albedo_map;
 uniform sampler2D disp_map;
 
 void vertex() {
-    float disp = texture(disp_map, UV*2.0).r;
+    float disp = texture(disp_map, UV).r;
+    disp = clamp(disp, 0.0, 1.0);
     VERTEX += disp * NORMAL;
 }
 
-const float uv_margin = 0.05;
 bool should_clip(float uv_x){
     float left_margin = current_center_uv - uv_margin;    
     float right_margin = current_center_uv + uv_margin;
