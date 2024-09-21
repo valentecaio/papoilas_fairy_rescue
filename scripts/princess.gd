@@ -48,7 +48,7 @@ func _physics_process(delta):
     move_and_slide()
     Global.player_position = position
 
-    var stage_w = 1024
+    var stage_w = Global.stage_w
     var threshold = 10 + stage_w/2.0
     if (position.x > threshold):
         position.x -= stage_w
