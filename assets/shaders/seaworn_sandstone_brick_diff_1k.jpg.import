@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ygugoietlv5q"
 path.s3tc="res://.godot/imported/seaworn_sandstone_brick_diff_1k.jpg-e9c8a5c28806522b243bb6d6443987d7.s3tc.ctex"
+path.etc2="res://.godot/imported/seaworn_sandstone_brick_diff_1k.jpg-e9c8a5c28806522b243bb6d6443987d7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/shaders/seaworn_sandstone_brick_diff_1k.jpg"
-dest_files=["res://.godot/imported/seaworn_sandstone_brick_diff_1k.jpg-e9c8a5c28806522b243bb6d6443987d7.s3tc.ctex"]
+dest_files=["res://.godot/imported/seaworn_sandstone_brick_diff_1k.jpg-e9c8a5c28806522b243bb6d6443987d7.s3tc.ctex", "res://.godot/imported/seaworn_sandstone_brick_diff_1k.jpg-e9c8a5c28806522b243bb6d6443987d7.etc2.ctex"]
 
 [params]
 

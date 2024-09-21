@@ -1,0 +1,100 @@
+[gd_scene load_steps=13 format=3 uid="uid://dw3uunn3h3bxf"]
+
+[ext_resource type="Script" path="res://scripts/enemies/ant.gd" id="1_fql2p"]
+[ext_resource type="Texture2D" uid="uid://bv3scrxo05kyf" path="res://assets/sprites/whimsy_hallow_dungeon/ant.png" id="2_3c3wd"]
+[ext_resource type="PackedScene" uid="uid://c85r26su1qgfe" path="res://scenes/enemies/killzone.tscn" id="3_c1ukf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dv4e"]
+atlas = ExtResource("2_3c3wd")
+region = Rect2(2, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ugkkv"]
+atlas = ExtResource("2_3c3wd")
+region = Rect2(67, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68eki"]
+atlas = ExtResource("2_3c3wd")
+region = Rect2(132, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5jpy"]
+atlas = ExtResource("2_3c3wd")
+region = Rect2(197, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kcqa"]
+atlas = ExtResource("2_3c3wd")
+region = Rect2(262, 2, 62, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qcyf"]
+atlas = ExtResource("2_3c3wd")
+region = Rect2(67, 2, 62, 62)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t2xfh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dv4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ugkkv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68eki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5jpy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kcqa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qcyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kcqa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qcyf")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bfae"]
+size = Vector2(14, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2vwu4"]
+size = Vector2(16, 8)
+
+[node name="Ant" type="Node2D"]
+script = ExtResource("1_fql2p")
+
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_t2xfh")
+autoplay = "default"
+
+[node name="RayCast1" type="RayCast2D" parent="."]
+target_position = Vector2(10, 0)
+
+[node name="RayCast2" type="RayCast2D" parent="."]
+target_position = Vector2(-10, 0)
+
+[node name="Jumpzone" type="Area2D" parent="."]
+collision_layer = 256
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jumpzone"]
+position = Vector2(0, -7.5)
+shape = SubResource("RectangleShape2D_6bfae")
+debug_color = Color(0, 1, 0, 0.196078)
+
+[node name="Killzone" parent="." instance=ExtResource("3_c1ukf")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("RectangleShape2D_2vwu4")
+debug_color = Color(1, 0, 0, 0.196078)

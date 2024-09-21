@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=4 uid="uid://ks8xnba7nkih"]
+[gd_scene load_steps=11 format=4 uid="uid://ks8xnba7nkih"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_564ds"]
 [ext_resource type="Script" path="res://scripts/stage_2d.gd" id="1_sfhyn"]
 [ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_r5agi"]
-[ext_resource type="PackedScene" uid="uid://bouo1wdries3t" path="res://scenes/player.tscn" id="3_77ans"]
+[ext_resource type="PackedScene" path="res://scenes/princess.tscn" id="3_77ans"]
 [ext_resource type="PackedScene" path="res://scenes/coin.tscn" id="4_thyb8"]
-[ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="5_upfow"]
+[ext_resource type="PackedScene" uid="uid://dw3uunn3h3bxf" path="res://scenes/enemies/ant.tscn" id="5_upfow"]
+[ext_resource type="PackedScene" uid="uid://ddxaqywbhxhe6" path="res://scenes/enemies/bat.tscn" id="7_kdcyx"]
+[ext_resource type="PackedScene" uid="uid://clm2nclhrbmmm" path="res://scenes/enemies/demon_jr.tscn" id="8_ryt27"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fxd8l"]
 texture = ExtResource("2_r5agi")
@@ -185,7 +187,7 @@ unique_name_in_owner = true
 script = ExtResource("1_564ds")
 
 [node name="Player" parent="." instance=ExtResource("3_77ans")]
-position = Vector2(120, 159)
+position = Vector2(72, 119)
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 
@@ -213,5 +215,11 @@ position = Vector2(160, 58)
 
 [node name="Enemies" type="Node" parent="."]
 
-[node name="Slime" parent="Enemies" instance=ExtResource("5_upfow")]
-position = Vector2(168, 228)
+[node name="Ant" parent="Enemies" instance=ExtResource("5_upfow")]
+position = Vector2(168, 235)
+
+[node name="Bat" parent="Enemies" instance=ExtResource("7_kdcyx")]
+position = Vector2(118, 154)
+
+[node name="DemonJr" parent="Enemies" instance=ExtResource("8_ryt27")]
+position = Vector2(40, 171)
