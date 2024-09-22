@@ -163,7 +163,7 @@ script = ExtResource("1_eamr7")
 sprite_frames = SubResource("SpriteFrames_fnbu2")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.331692
+frame_progress = 0.2966
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_63jel")

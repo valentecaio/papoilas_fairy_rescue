@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://ba0m0bkv10ote"]
+[gd_scene load_steps=15 format=4 uid="uid://ba0m0bkv10ote"]
 
 [ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_r5agi"]
 [ext_resource type="PackedScene" uid="uid://cx0q67s3furhs" path="res://scenes/princess.tscn" id="3_77ans"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://scripts/enemies/horizontal.gd" id="9_vsv7h"]
 [ext_resource type="PackedScene" uid="uid://bwltm8xcx2pg1" path="res://scenes/coin.tscn" id="10_43gxp"]
 [ext_resource type="PackedScene" uid="uid://b7n5mjlgfnwwc" path="res://scenes/fairy.tscn" id="10_p7nl5"]
+[ext_resource type="PackedScene" uid="uid://c2sx4ndaqv2h" path="res://scenes/door.tscn" id="11_obs43"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fxd8l"]
 texture = ExtResource("2_r5agi")
@@ -324,7 +325,7 @@ anchor_mode = 0
 position_smoothing_enabled = true
 
 [node name="Princess" parent="." instance=ExtResource("3_77ans")]
-position = Vector2(986, 185)
+position = Vector2(991, 179)
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 position = Vector2(0, 1147)
@@ -616,3 +617,6 @@ position = Vector2(-173, 406)
 
 [node name="Fairy5" parent="Fairys" instance=ExtResource("10_p7nl5")]
 position = Vector2(-62, 470)
+
+[node name="Door" parent="." instance=ExtResource("11_obs43")]
+position = Vector2(365, 937)
