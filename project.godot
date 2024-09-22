@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="GodotWildJam73"
+config/name="Papoilas Fairy Rescue"
 run/main_scene="res://scenes/world_3d.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://assets/icon.png"
