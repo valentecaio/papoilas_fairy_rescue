@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=4 uid="uid://ba0m0bkv10ote"]
+[gd_scene load_steps=16 format=4 uid="uid://ba0m0bkv10ote"]
 
 [ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="2_r5agi"]
 [ext_resource type="PackedScene" uid="uid://cx0q67s3furhs" path="res://scenes/princess.tscn" id="3_77ans"]
+[ext_resource type="Script" path="res://scripts/endgame_hatch.gd" id="4_fe6wp"]
 [ext_resource type="Texture2D" uid="uid://b8kcj5gc00qpe" path="res://assets/sprites/castle-tileset.png" id="5_inpna"]
 [ext_resource type="PackedScene" uid="uid://dw3uunn3h3bxf" path="res://scenes/enemies/ant.tscn" id="5_upfow"]
 [ext_resource type="PackedScene" uid="uid://ddxaqywbhxhe6" path="res://scenes/enemies/bat.tscn" id="7_kdcyx"]
@@ -325,7 +326,7 @@ anchor_mode = 0
 position_smoothing_enabled = true
 
 [node name="Princess" parent="." instance=ExtResource("3_77ans")]
-position = Vector2(991, 179)
+position = Vector2(989, 187)
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 position = Vector2(0, 1147)
@@ -349,6 +350,14 @@ use_parent_material = true
 position = Vector2(0, -3)
 tile_map_data = PackedByteArray("AAAbAMH/BgAHAAEAAAAbAML/BgAHAAIAAAAEAND/BgAHAAEAAAAEANH/BgAHAAEAAAAEANL/BgAHAAEAAAAEANP/BgAHAAEAAAAEANT/BgAHAAEAAAAEANX/BgAHAAEAAAAEANb/BgAHAAEAAAAEANf/BgAHAAEAAAAEANj/BgAHAAEAAAAEANn/BgAHAAEAAAAEANr/BgAHAAEAAAAEANv/BgAHAAIAAAA9ANb/BgAHAAEAAAA9ANf/BgAHAAEAAAA9ANj/BgAHAAIAAAA9ANX/BgAHAAAAAAAEAM//BgAHAAAAAAAbAL7/BgAHAAAAAAAbAL//BgAHAAEAAAAbAMD/BgAHAAEAAAAUAMX/BgAHAAAAAAAUAMb/BgAHAAEAAAAUAMf/BgAHAAEAAAAUAMj/BgAHAAIAAAAeANH/BgABAAIAAAAfAND/BgABAAIAAAAfAM//BgABAAIAAAAgAM//BgABAAIAAAAbAM7/BgAEAAIAAAAcAM7/BgAEAAIAAAAdAM7/BgAEAAIAAAAeAM7/BgAEAAIAAAAqANT/BgAEAAIAAAApANL/BgAEAAIAAAAhAM//BgABAAcAAAAgAND/BgABAAcAAAAfANH/BgABAAcAAAAJANP/BgABAAcAAAAIANP/BgABAAcAAAAIANL/BgABAAcAAAAHANL/BgABAAcAAAACAM7/BgACAAEAAAABAM7/BgACAAEAAAABAM//BgACAAEAAAAAAM//BgACAAEAAAA+AM7/BgACAAEAAAA+AM//BgACAAEAAAA+AND/BgACAAEAAAA/AND/BgACAAEAAAAvANf/BgACAAEAAAAvANb/BgACAAEAAAA0ANv/BgABAAcAAAAKANz/BgAEAAEAAAAKANv/BgAEAAEAAAALANv/BgAEAAEAAAALANr/BgAEAAEAAAA=")
 tile_set = SubResource("TileSet_mhwei")
+
+[node name="endgame_hatch" type="TileMapLayer" parent="TileMapLayers"]
+z_index = 30
+use_parent_material = true
+position = Vector2(0, -3)
+tile_map_data = PackedByteArray("AAAZAOX/AAAHAAIAAAAaAOX/AAAHAAIAAAAbAOX/AAAHAAIAAAA=")
+tile_set = SubResource("TileSet_mhwei")
+script = ExtResource("4_fe6wp")
 
 [node name="Enemies" type="Node" parent="."]
 
@@ -616,7 +625,7 @@ position = Vector2(-661, 209)
 position = Vector2(-173, 406)
 
 [node name="Fairy5" parent="Fairys" instance=ExtResource("10_p7nl5")]
-position = Vector2(-62, 470)
+position = Vector2(-61, 471)
 
 [node name="Door" parent="." instance=ExtResource("11_obs43")]
 position = Vector2(365, 937)
