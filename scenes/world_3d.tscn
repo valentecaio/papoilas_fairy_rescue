@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://d0xypoxt833e5"]
+[gd_scene load_steps=25 format=3 uid="uid://d0xypoxt833e5"]
 
 [ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
 [ext_resource type="Script" path="res://scripts/world_3d.gd" id="1_tdc3r"]
@@ -82,6 +82,21 @@ top_radius = 0.0
 bottom_radius = 0.7
 height = 1.595
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1tslf"]
+sky_top_color = Color(0, 0.480168, 1, 1)
+sky_horizon_color = Color(0.679899, 0.407866, 0, 1)
+ground_bottom_color = Color(0.0574203, 0.425325, 0.106069, 1)
+ground_horizon_color = Color(0.678431, 0.407843, 0, 1)
+
+[sub_resource type="Sky" id="Sky_vkrru"]
+sky_material = SubResource("ProceduralSkyMaterial_1tslf")
+
+[sub_resource type="Environment" id="Environment_vptxo"]
+background_mode = 2
+background_color = Color(0.48131, 0.795568, 0.981995, 1)
+background_energy_multiplier = 2.14
+sky = SubResource("Sky_vkrru")
+
 [node name="World3D" type="Node3D"]
 script = ExtResource("1_tdc3r")
 
@@ -102,6 +117,7 @@ shadow_enabled = true
 
 [node name="Ground" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.173965, 0)
+visible = false
 mesh = SubResource("PlaneMesh_m65kf")
 
 [node name="WallLeftPlane" type="MeshInstance3D" parent="."]
@@ -199,3 +215,6 @@ theme_override_fonts/font = ExtResource("8_y68x8")
 text = "kills:"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vptxo")
