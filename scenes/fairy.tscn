@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b7n5mjlgfnwwc"]
+[gd_scene load_steps=15 format=3 uid="uid://c32d88g0qlr5u"]
 
 [ext_resource type="Script" path="res://scripts/fairy.gd" id="1_eamr7"]
 [ext_resource type="AudioStream" uid="uid://fynmg7rprtag" path="res://assets/sounds/coin.wav" id="3_nu2uj"]

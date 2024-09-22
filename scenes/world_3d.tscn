@@ -1,7 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://d0xypoxt833e5"]
+[gd_scene load_steps=21 format=3 uid="uid://d0xypoxt833e5"]
 
 [ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
-[ext_resource type="Script" path="res://scripts/world_3d.gd" id="1_tdc3r"]
 [ext_resource type="PackedScene" uid="uid://ba0m0bkv10ote" path="res://scenes/stage_2d.tscn" id="2_5spc5"]
 [ext_resource type="Shader" path="res://assets/shaders/wall.gdshader" id="2_lwkpp"]
 [ext_resource type="Texture2D" uid="uid://ygugoietlv5q" path="res://assets/shaders/seaworn_sandstone_brick_diff_1k.jpg" id="3_amijh"]
@@ -84,7 +83,6 @@ bottom_radius = 0.7
 height = 1.595
 
 [node name="World3D" type="Node3D"]
-script = ExtResource("1_tdc3r")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 36.4657)

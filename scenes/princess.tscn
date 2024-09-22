@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://cx0q67s3furhs"]
+[gd_scene load_steps=59 format=3 uid="uid://cx0q67s3furhs"]
 
 [ext_resource type="Script" path="res://scripts/princess.gd" id="1_haw0a"]
 [ext_resource type="Texture2D" uid="uid://ddftu4v1et0sq" path="res://assets/sprites/unused/princess.png" id="2_2rjkl"]
@@ -244,7 +244,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"climb",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -409,29 +409,50 @@ animations = [{
 radius = 5.0
 height = 18.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fgbk"]
+size = Vector2(4, 17)
+
 [node name="Princess" type="CharacterBody2D"]
-z_index = 5
+z_index = 20
 collision_layer = 2
 script = ExtResource("1_haw0a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-z_index = 20
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_ipo77")
-animation = &"run"
-autoplay = "jump"
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.0602809
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_1qape")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-z_index = 20
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_ipo77")
-animation = &"climb"
-autoplay = "jump"
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.491649
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_1qape")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_8fgbk")
+debug_color = Color(0, 1, 0, 0.196078)
+
+[node name="Area2D2" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_8fgbk")
+debug_color = Color(0, 1, 0, 0.196078)
