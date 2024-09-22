@@ -25,7 +25,7 @@ func _physics_process(delta: float) -> void:
         base.rotation = Vector3.ZERO
     else:
       var turn_dir = Input.get_axis("turn_left", "turn_right")
-      base.rotate(Vector3(0,1,0), deg_to_rad(-turn_dir*delta*25))
+      base.rotate(Vector3(0,1,0), deg_to_rad(-turn_dir*delta*15))
 
     var cur_player_pos = Global.player_position
     var angle = deg_to_rad(cur_player_pos.x * 360.0 / 1024)
