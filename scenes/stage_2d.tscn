@@ -735,7 +735,6 @@ color = Color(1, 0, 0.962392, 1)
 
 [node name="Fairy2" parent="Fairys" instance=ExtResource("10_p7nl5")]
 position = Vector2(-61, 102)
-color = Color(0, 0.676505, 0.0856702, 1)
 
 [node name="Fairy3" parent="Fairys" instance=ExtResource("10_p7nl5")]
 position = Vector2(-661, 209)

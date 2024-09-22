@@ -1,10 +1,12 @@
-[gd_scene load_steps=15 format=4 uid="uid://cl65sr7425yg1"]
+[gd_scene load_steps=17 format=4 uid="uid://cl65sr7425yg1"]
 
 [ext_resource type="Texture2D" uid="uid://bsquggku0eki8" path="res://assets/sprites/world_tileset.png" id="1_jvn6v"]
 [ext_resource type="PackedScene" uid="uid://cx0q67s3furhs" path="res://scenes/princess.tscn" id="2_0yyns"]
 [ext_resource type="Texture2D" uid="uid://b8kcj5gc00qpe" path="res://assets/sprites/castle-tileset.png" id="5_ae2ct"]
 [ext_resource type="AudioStream" uid="uid://iyd5jjk3j5gx" path="res://assets/music/princess-tower_r1_session.wav" id="5_jlfdp"]
 [ext_resource type="FontFile" uid="uid://wff6hctsod50" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="6_p61pa"]
+[ext_resource type="PackedScene" uid="uid://b7n5mjlgfnwwc" path="res://scenes/fairy.tscn" id="6_tkdlb"]
+[ext_resource type="Script" path="res://scripts/flip_fairies.gd" id="6_vi7ng"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fmuyo"]
 texture = ExtResource("1_jvn6v")
@@ -677,3 +679,37 @@ theme_override_colors/font_color = Color(0.0117189, 0.148989, 0.348791, 1)
 theme_override_fonts/font = ExtResource("6_p61pa")
 theme_override_font_sizes/font_size = 24
 text = "YOU WON!"
+
+[node name="Fairys" type="Node2D" parent="."]
+position = Vector2(920, 141)
+script = ExtResource("6_vi7ng")
+
+[node name="Fairy1" parent="Fairys" instance=ExtResource("6_tkdlb")]
+light_mask = 0
+position = Vector2(-853, -104)
+collision_layer = 0
+collision_mask = 0
+color = Color(1, 0, 0.962392, 1)
+
+[node name="Fairy2" parent="Fairys" instance=ExtResource("6_tkdlb")]
+position = Vector2(-819, -123)
+collision_layer = 0
+collision_mask = 0
+
+[node name="Fairy3" parent="Fairys" instance=ExtResource("6_tkdlb")]
+position = Vector2(-766, -132)
+collision_layer = 0
+collision_mask = 0
+color = Color(1, 0, 0.0416737, 1)
+
+[node name="Fairy4" parent="Fairys" instance=ExtResource("6_tkdlb")]
+position = Vector2(-748, -98)
+collision_layer = 0
+collision_mask = 0
+color = Color(0, 0.22123, 1, 1)
+
+[node name="Fairy5" parent="Fairys" instance=ExtResource("6_tkdlb")]
+position = Vector2(-733, -123)
+collision_layer = 0
+collision_mask = 0
+color = Color(1, 0.510844, 0, 1)
