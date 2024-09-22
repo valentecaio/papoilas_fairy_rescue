@@ -9,14 +9,14 @@ signal open_hatch()
 var fairy_soundplayer = preload("res://scenes/fairy_sound.tscn").instantiate()
 var coin_soundplayer = preload("res://scenes/coin_sound.tscn").instantiate()
 
-### player stats ###qe
+### player stats ###
 var player_coins :
     set(value):
         player_coins = value
         coin_soundplayer.play()
     get():
         return player_coins
-        
+
 var player_fairies :
     set(value):
         player_fairies = value
@@ -25,7 +25,7 @@ var player_fairies :
             open_hatch.emit()
     get():
         return player_fairies
-            
+
 var player_kills := 0
 
 const player_max_lifes = 1
@@ -50,11 +50,9 @@ func _ready():
     player_coins = 0
     add_child(fairy_soundplayer)
     add_child(coin_soundplayer)
-    
+
 func lose_game():    
     Engine.time_scale = 0.5
     await get_tree().create_timer(0.3).timeout
     Engine.time_scale = 1
     get_tree().reload_current_scene()
-    
-    
