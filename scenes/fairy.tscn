@@ -1,8 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://b7n5mjlgfnwwc"]
+[gd_scene load_steps=17 format=3 uid="uid://b7n5mjlgfnwwc"]
 
 [ext_resource type="Script" path="res://scripts/fairy.gd" id="1_eamr7"]
+[ext_resource type="Shader" path="res://assets/shaders/fairy.gdshader" id="2_5vqdj"]
 [ext_resource type="AudioStream" uid="uid://fynmg7rprtag" path="res://assets/sounds/coin.wav" id="3_nu2uj"]
 [ext_resource type="Texture2D" uid="uid://d1fqx4nm1n3o3" path="res://assets/sprites/green_fairy.png" id="3_rei0g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_axyhf"]
+resource_local_to_scene = true
+shader = ExtResource("2_5vqdj")
+shader_parameter/modulate = Color(0, 0, 0, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s1slc"]
 atlas = ExtResource("3_rei0g")
@@ -160,6 +166,7 @@ collision_mask = 2
 script = ExtResource("1_eamr7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_axyhf")
 sprite_frames = SubResource("SpriteFrames_fnbu2")
 animation = &"idle"
 autoplay = "idle"

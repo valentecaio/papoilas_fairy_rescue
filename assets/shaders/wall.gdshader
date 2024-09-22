@@ -12,7 +12,7 @@ void vertex() {
 }
 
 bool should_clip(float uv_x){
-    float left_margin = current_center_uv - uv_margin;    
+    float left_margin = current_center_uv - uv_margin;
     float right_margin = current_center_uv + uv_margin;
     if (left_margin >= 0.0 && right_margin <= 1.0){
         return uv_x > left_margin && uv_x < right_margin;
