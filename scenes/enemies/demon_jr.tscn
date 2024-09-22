@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://clm2nclhrbmmm"]
 
-[ext_resource type="Texture2D" uid="uid://4ll47lsk5crf" path="res://assets/sprites/whimsy_hallow_dungeon/demon_jr.png" id="1_h85ip"]
-[ext_resource type="Script" path="res://scripts/enemies/demon_jr.gd" id="1_o1uk5"]
+[ext_resource type="Texture2D" uid="uid://4ll47lsk5crf" path="res://assets/sprites/demon_jr.png" id="1_h85ip"]
+[ext_resource type="Script" path="res://scripts/enemies/follower.gd" id="1_o1uk5"]
 [ext_resource type="PackedScene" uid="uid://c85r26su1qgfe" path="res://scenes/enemies/killzone.tscn" id="2_q5brd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1re6r"]

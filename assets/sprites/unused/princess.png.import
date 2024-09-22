@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqf8lmht523wb"
-path="res://.godot/imported/princess_idle.png-8b342e5f5cc5e4690e026d03c7e5aeea.ctex"
+uid="uid://ddftu4v1et0sq"
+path="res://.godot/imported/princess.png-bdcb588cbc42bdb9cbf77092707051bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/gabishi/princess_idle.png"
-dest_files=["res://.godot/imported/princess_idle.png-8b342e5f5cc5e4690e026d03c7e5aeea.ctex"]
+source_file="res://assets/sprites/unused/princess.png"
+dest_files=["res://.godot/imported/princess.png-bdcb588cbc42bdb9cbf77092707051bc.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://dw3uunn3h3bxf"]
 
-[ext_resource type="Script" path="res://scripts/enemies/ant.gd" id="1_fql2p"]
-[ext_resource type="Texture2D" uid="uid://bv3scrxo05kyf" path="res://assets/sprites/whimsy_hallow_dungeon/ant.png" id="2_3c3wd"]
+[ext_resource type="Script" path="res://scripts/enemies/horizontal.gd" id="1_fql2p"]
+[ext_resource type="Texture2D" uid="uid://bv3scrxo05kyf" path="res://assets/sprites/ant.png" id="2_3c3wd"]
 [ext_resource type="PackedScene" uid="uid://c85r26su1qgfe" path="res://scenes/enemies/killzone.tscn" id="3_c1ukf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1dv4e"]
@@ -75,21 +75,24 @@ size = Vector2(16, 8)
 script = ExtResource("1_fql2p")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+modulate = Color(1.54018e-05, 0.958235, 0, 1)
 sprite_frames = SubResource("SpriteFrames_t2xfh")
 autoplay = "default"
 
-[node name="RayCast1" type="RayCast2D" parent="."]
-target_position = Vector2(10, 0)
+[node name="Rays" type="Node2D" parent="."]
 
-[node name="RayCast2" type="RayCast2D" parent="."]
+[node name="RayCastLeft" type="RayCast2D" parent="Rays"]
 target_position = Vector2(-10, 0)
+
+[node name="RayCastRight" type="RayCast2D" parent="Rays"]
+target_position = Vector2(10, 0)
 
 [node name="Jumpzone" type="Area2D" parent="."]
 collision_layer = 256
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jumpzone"]
-position = Vector2(0, -7.5)
+position = Vector2(0, -8.5)
 shape = SubResource("RectangleShape2D_6bfae")
 debug_color = Color(0, 1, 0, 0.196078)
 

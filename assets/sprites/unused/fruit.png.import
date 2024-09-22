@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddftu4v1et0sq"
-path="res://.godot/imported/princess.png-f8f224b02620cb825846a3de722d7788.ctex"
+uid="uid://rgc2bp44twb2"
+path="res://.godot/imported/fruit.png-bccb653d6e95c3692a9f93b8742382df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/whimsy_hallow_dungeon/princess.png"
-dest_files=["res://.godot/imported/princess.png-f8f224b02620cb825846a3de722d7788.ctex"]
+source_file="res://assets/sprites/unused/fruit.png"
+dest_files=["res://.godot/imported/fruit.png-bccb653d6e95c3692a9f93b8742382df.ctex"]
 
 [params]
 

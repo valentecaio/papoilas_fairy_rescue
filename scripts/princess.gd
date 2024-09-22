@@ -7,13 +7,18 @@ extends CharacterBody2D
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-@onready var animated_sprite_2d:     AnimatedSprite2D = $AnimatedSprite2D
+@onready var animated_sprite_2d:   AnimatedSprite2D = $AnimatedSprite2D
 @onready var animated_sprite_2d_2: AnimatedSprite2D = $AnimatedSprite2D2
 var animated_sprites: Array[AnimatedSprite2D]
+
+@onready var collision_shape_2d_2: CollisionShape2D = $CollisionShape2D2
 
 
 func _ready():
     animated_sprites = [animated_sprite_2d, animated_sprite_2d_2]
+    animated_sprite_2d_2.position.x = Global.stage_w
+    collision_shape_2d_2.position.x = Global.stage_w
+    for sprite in animated_sprites: sprite.flip_h = true
 
 
 func _physics_process(delta):
@@ -35,6 +40,7 @@ func _physics_process(delta):
         velocity.x = direction * speed
     else:
         velocity.x = move_toward(velocity.x, 0, speed)
+    move_and_slide()
 
     # animation
     if is_on_floor():
@@ -45,16 +51,17 @@ func _physics_process(delta):
     else:
         for sprite in animated_sprites: sprite.play("jump")
 
-    move_and_slide()
-    Global.player_position = position
 
     var stage_w = Global.stage_w
     var threshold = 10 + stage_w/2.0
     if (position.x > threshold):
         position.x -= stage_w
-
     if (position.x < -threshold):
         position.x += stage_w
+
+    # update global player position for enemies to follow
+    Global.player_position = position
+
 
 # bounce when jumping on an enemy
 func bounce():

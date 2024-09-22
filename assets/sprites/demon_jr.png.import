@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkba4umu6ms5a"
-path="res://.godot/imported/grid_16x16.png-c4c0d0d98c96c5596196980685c399fb.ctex"
+uid="uid://4ll47lsk5crf"
+path="res://.godot/imported/demon_jr.png-0ff48f2a6dcc0b7b3ff7744501379ca4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/grids/grid_16x16.png"
-dest_files=["res://.godot/imported/grid_16x16.png-c4c0d0d98c96c5596196980685c399fb.ctex"]
+source_file="res://assets/sprites/demon_jr.png"
+dest_files=["res://.godot/imported/demon_jr.png-0ff48f2a6dcc0b7b3ff7744501379ca4.ctex"]
 
 [params]
 

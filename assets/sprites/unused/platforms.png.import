@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cao12thgudwe6"
-path="res://.godot/imported/screenshot-1.png-4f5c0b8be4195e475c657f5e694d7939.ctex"
+uid="uid://b6cvw0ipgtapu"
+path="res://.godot/imported/platforms.png-2fd5a3e38d42b0fba5e93fceb1fe9fca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/RottingPixels_Castle_Platformer/screenshot-1.png"
-dest_files=["res://.godot/imported/screenshot-1.png-4f5c0b8be4195e475c657f5e694d7939.ctex"]
+source_file="res://assets/sprites/unused/platforms.png"
+dest_files=["res://.godot/imported/platforms.png-2fd5a3e38d42b0fba5e93fceb1fe9fca.ctex"]
 
 [params]
 

@@ -1,7 +1,6 @@
 extends Camera3D
 
 @onready var base = $"../Tower/StageMid"
-@onready var stage_2d = $"../Tower/Stage2DSubViewport/Stage2D"
 @onready var wall: MeshInstance3D = $"../Tower/Wall"
 var material: ShaderMaterial
 var left_plane_material: ShaderMaterial
@@ -14,7 +13,6 @@ var left_plane_material: ShaderMaterial
 
 
 func _ready():
-    stage_2d.player_position_changed.connect(_on_stage_2d_player_position_changed)
     material = wall.mesh.surface_get_material(0)
     left_plane_material = wall_left_plane.mesh.surface_get_material(0)
     material.set_shader_parameter("uv_margin", uv_margin)
@@ -23,9 +21,8 @@ func _ready():
 func _physics_process(delta: float) -> void:
     var dir = Input.get_axis("turn_left", "turn_right")
     base.rotate(Vector3(0,1,0), deg_to_rad(-dir*delta*50))
-
-
-func _on_stage_2d_player_position_changed(cur_player_pos):
+    
+    var cur_player_pos = Global.player_position
     var angle = deg_to_rad(cur_player_pos.x * 360.0 / 1024)
     var uv_center = angle / (2 * PI)
     if (uv_center < 0.00):

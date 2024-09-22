@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8kcj5gc00qpe"
-path="res://.godot/imported/castle-tileset.png-4ed1f544cd1585191ac40e97de741795.ctex"
+uid="uid://bw8dnxt18ktnq"
+path="res://.godot/imported/Whimsy_Hallow_Dungeon_Asset_Pack_V1.62.png-e159f9e9087b0ac99e8f32cd81016433.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/RottingPixels_Castle_Platformer/castle-tileset.png"
-dest_files=["res://.godot/imported/castle-tileset.png-4ed1f544cd1585191ac40e97de741795.ctex"]
+source_file="res://assets/sprites/unused/Whimsy_Hallow_Dungeon_Asset_Pack_V1.62.png"
+dest_files=["res://.godot/imported/Whimsy_Hallow_Dungeon_Asset_Pack_V1.62.png-e159f9e9087b0ac99e8f32cd81016433.ctex"]
 
 [params]
 
