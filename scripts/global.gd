@@ -14,20 +14,22 @@ var coin_soundplayer = preload("res://scenes/coin_sound.tscn").instantiate()
 var player_coins :
     set(value):
         player_coins = value
-        coin_soundplayer.play()
+        if (value > 0):
+            coin_soundplayer.play()
     get():
         return player_coins
 
 var player_fairies : int:
     set(value):
         player_fairies = value
-        fairy_soundplayer.play()
+        if (value > 0):
+            fairy_soundplayer.play()
         if value == 5:
             open_hatch.emit()
     get():
         return player_fairies
 
-var player_kills := 0
+var player_kills
 
 const player_max_lifes = 1
 var player_lifes:
@@ -46,14 +48,19 @@ var player_position: Vector2:
 
 
 func _ready():
+    add_child(fairy_soundplayer)
+    add_child(coin_soundplayer)
+    init_game()
+
+func init_game():
     player_lifes = player_max_lifes
     player_fairies = 0
     player_coins = 0
-    add_child(fairy_soundplayer)
-    add_child(coin_soundplayer)
+    player_kills = 0
 
 func lose_game():    
     Engine.time_scale = 0.5
     await get_tree().create_timer(0.3).timeout
     Engine.time_scale = 1
+    init_game()
     get_tree().reload_current_scene()

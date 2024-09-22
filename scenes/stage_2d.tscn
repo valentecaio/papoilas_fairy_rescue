@@ -430,7 +430,7 @@ anchor_mode = 0
 position_smoothing_enabled = true
 
 [node name="Princess" parent="." instance=ExtResource("3_77ans")]
-position = Vector2(290, 807)
+position = Vector2(976, 186)
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 position = Vector2(0, 1147)
