@@ -1,10 +1,12 @@
-[gd_scene load_steps=17 format=3 uid="uid://d0xypoxt833e5"]
+[gd_scene load_steps=21 format=3 uid="uid://d0xypoxt833e5"]
 
 [ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
 [ext_resource type="PackedScene" uid="uid://ba0m0bkv10ote" path="res://scenes/stage_2d.tscn" id="2_5spc5"]
 [ext_resource type="Shader" path="res://assets/shaders/wall.gdshader" id="2_lwkpp"]
 [ext_resource type="Texture2D" uid="uid://ygugoietlv5q" path="res://assets/shaders/seaworn_sandstone_brick_diff_1k.jpg" id="3_amijh"]
 [ext_resource type="Texture2D" uid="uid://cjao7rqnlr1ct" path="res://assets/shaders/seaworn_sandstone_brick_disp_1k.png" id="4_o8v3r"]
+[ext_resource type="Shader" path="res://assets/shaders/wall_left_plane.gdshader" id="6_ap5ad"]
+[ext_resource type="AudioStream" uid="uid://iyd5jjk3j5gx" path="res://assets/music/princess-tower_r1_session.wav" id="7_dfrau"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndc6u"]
 albedo_color = Color(0, 0.4, 0.08, 1)
@@ -12,6 +14,18 @@ albedo_color = Color(0, 0.4, 0.08, 1)
 [sub_resource type="PlaneMesh" id="PlaneMesh_m65kf"]
 material = SubResource("StandardMaterial3D_ndc6u")
 size = Vector2(1000, 1000)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q2imv"]
+render_priority = 0
+shader = ExtResource("6_ap5ad")
+shader_parameter/uv_x = 0.25
+shader_parameter/disp_map = ExtResource("4_o8v3r")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ge2k4"]
+material = SubResource("ShaderMaterial_q2imv")
+size = Vector2(1, 50)
+subdivide_width = 1
+subdivide_depth = 255
 
 [sub_resource type="BoxMesh" id="BoxMesh_1daek"]
 size = Vector3(10, 2, 5)
@@ -67,6 +81,7 @@ cap_bottom = false
 render_priority = 0
 shader = ExtResource("2_lwkpp")
 shader_parameter/current_center_uv = 0.0
+shader_parameter/uv_margin = 0.05
 shader_parameter/albedo_map = ExtResource("3_amijh")
 shader_parameter/disp_map = ExtResource("4_o8v3r")
 
@@ -77,7 +92,7 @@ top_radius = 26.0
 bottom_radius = 26.0
 height = 50.0
 radial_segments = 256
-rings = 256
+rings = 255
 cap_top = false
 cap_bottom = false
 
@@ -107,20 +122,25 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.173965, 0)
 mesh = SubResource("PlaneMesh_m65kf")
 
-[node name="Tower" type="Node3D" parent="."]
+[node name="WallLeftPlane" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -26.5, 25, 0)
+visible = false
+mesh = SubResource("PlaneMesh_ge2k4")
+skeleton = NodePath("../Tower")
+
+[node name="Tower" type="Node" parent="."]
 
 [node name="Balcony" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000597239, 39.2151, -28.0097)
 visible = false
 mesh = SubResource("BoxMesh_1daek")
 
-[node name="Base2" type="MeshInstance3D" parent="Tower"]
+[node name="StageBackground" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 0)
-visible = false
 mesh = SubResource("CylinderMesh_hkuky")
 skeleton = NodePath("../..")
 
-[node name="Base" type="MeshInstance3D" parent="Tower"]
+[node name="StageMid" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 0)
 mesh = SubResource("CylinderMesh_cupiy")
 skeleton = NodePath("../..")
@@ -144,3 +164,7 @@ transform = Transform3D(0.999973, 0.00481498, -0.00559637, -0.00479705, 0.999983
 visible = false
 mesh = SubResource("CylinderMesh_kwur7")
 skeleton = NodePath("../..")
+
+[node name="Princess-towerR1Session" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_dfrau")
+autoplay = true
