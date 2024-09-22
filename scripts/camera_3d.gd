@@ -35,7 +35,7 @@ func _on_stage_2d_player_position_changed(cur_player_pos):
     #print(cur_player_pos, " ", rad_to_deg(angle))
     position.x = distance * sin(angle)
     position.z = distance * cos(angle)
-    position.y = (1 - cur_player_pos.y/1400) * base.mesh.height + 6
+    position.y = (1 - cur_player_pos.y/1400) * base.mesh.height + 15
     look_at(Vector3(0, position.y, 0))
     
     var left_plane_angle = angle - uv_margin * (2*PI)
