@@ -28,6 +28,13 @@ var player_fairies :
             
 var player_kills := 0
 
+const player_max_lifes = 1
+var player_lifes:
+    set(value):
+        player_lifes = value
+        if (player_lifes <= 0):
+            lose_game()    
+
 # current player position, used by enemies to track player
 var player_position: Vector2:
     set(pos):
@@ -38,8 +45,16 @@ var player_position: Vector2:
 
 
 func _ready():
+    player_lifes = player_max_lifes
     player_fairies = 0
     player_coins = 0
     add_child(fairy_soundplayer)
     add_child(coin_soundplayer)
+    
+func lose_game():    
+    Engine.time_scale = 0.5
+    await get_tree().create_timer(0.3).timeout
+    Engine.time_scale = 1
+    get_tree().reload_current_scene()
+    
     
