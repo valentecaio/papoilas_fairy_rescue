@@ -89,7 +89,7 @@ height = 1.595
 [node name="World3D" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 36.4657)
 current = true
 fov = 95.0
 script = ExtResource("1_35l0t")
@@ -107,7 +107,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.173965, 0)
 mesh = SubResource("PlaneMesh_m65kf")
 
-[node name="Tower" type="Node" parent="."]
+[node name="Tower" type="Node3D" parent="."]
 
 [node name="Balcony" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000597239, 39.2151, -28.0097)
@@ -116,6 +116,7 @@ mesh = SubResource("BoxMesh_1daek")
 
 [node name="Base2" type="MeshInstance3D" parent="Tower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25, 0)
+visible = false
 mesh = SubResource("CylinderMesh_hkuky")
 skeleton = NodePath("../..")
 
@@ -134,7 +135,7 @@ disable_3d = true
 transparent_bg = true
 handle_input_locally = false
 canvas_item_default_texture_filter = 0
-size = Vector2i(1024, 512)
+size = Vector2i(512, 1400)
 
 [node name="Stage2D" parent="Tower/Stage2DSubViewport" instance=ExtResource("2_5spc5")]
 
