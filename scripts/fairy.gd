@@ -6,8 +6,9 @@ extends Area2D
 @export var color : Color
 
 func _on_body_entered(_body):
-    animation_player.play("pickup")
+    #animation_player.play("pickup")
     Global.player_fairies += 1
+    queue_free()
     
 func _ready():
     animated_sprite_2d.material.set_shader_parameter("modulate", color)
