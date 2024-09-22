@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce2mvmh0ot56m"]
+
+[ext_resource type="AudioStream" uid="uid://7rhhfi6yv6oh" path="res://assets/sounds/fairy.wav" id="1_b5h0l"]
+
+[node name="FairySound" type="AudioStreamPlayer"]
+stream = ExtResource("1_b5h0l")

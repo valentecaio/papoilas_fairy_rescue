@@ -101,20 +101,6 @@ func process_climb(_delta, dir):
 
 ### AUXILIARY FUNCTIONS ###
 
-# bounce when jumping on an enemy
-func bounce():
-    velocity.y = 0.75 * jump_velocity
-    Global.player_kills += 1
-
-func die():
-    play("death")
-    collision_shape_2d.queue_free()
-    collision_shape_2d_2.queue_free()
-
-    climbing = false
-    velocity = Vector2.ZERO
-
-
 func play(animation):
     for sprite in animated_sprites:
         sprite.play(animation)
@@ -136,3 +122,16 @@ func is_on_ladder():
         if area.get_overlapping_bodies():
             return true
     return false
+
+
+### CALLED BY OTHER SCRIPTS ###
+
+# bounce when jumping on an enemy
+func bounce():
+    velocity.y = 0.75 * jump_velocity
+    Global.player_kills += 1
+
+func die():
+    # play("death")
+    climbing = false
+    velocity = Vector2.ZERO
