@@ -614,19 +614,25 @@ position = Vector2(713, 704)
 position = Vector2(933, 154)
 
 [node name="Fairy1" parent="Fairys" instance=ExtResource("10_p7nl5")]
+light_mask = 0
 position = Vector2(-877, -42)
+color = Color(1, 0, 0.962392, 1)
 
 [node name="Fairy2" parent="Fairys" instance=ExtResource("10_p7nl5")]
 position = Vector2(-61, 102)
+color = Color(0, 0.676505, 0.0856702, 1)
 
 [node name="Fairy3" parent="Fairys" instance=ExtResource("10_p7nl5")]
 position = Vector2(-661, 209)
+color = Color(1, 0, 0.0416737, 1)
 
 [node name="Fairy4" parent="Fairys" instance=ExtResource("10_p7nl5")]
 position = Vector2(-173, 406)
+color = Color(0, 0.22123, 1, 1)
 
 [node name="Fairy5" parent="Fairys" instance=ExtResource("10_p7nl5")]
 position = Vector2(-61, 471)
+color = Color(1, 0.510844, 0, 1)
 
 [node name="Door" parent="." instance=ExtResource("11_obs43")]
 position = Vector2(365, 937)
