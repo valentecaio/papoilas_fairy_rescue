@@ -66,3 +66,4 @@ func _physics_process(delta):
 # bounce when jumping on an enemy
 func bounce():
     velocity.y = 0.75 * jump_velocity
+    Global.player_kills += 1

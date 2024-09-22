@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://d0xypoxt833e5"]
+[gd_scene load_steps=21 format=3 uid="uid://d0xypoxt833e5"]
 
 [ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
 [ext_resource type="PackedScene" uid="uid://ba0m0bkv10ote" path="res://scenes/stage_2d.tscn" id="2_5spc5"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cjao7rqnlr1ct" path="res://assets/shaders/seaworn_sandstone_brick_disp_1k.png" id="4_o8v3r"]
 [ext_resource type="Shader" path="res://assets/shaders/wall_left_plane.gdshader" id="6_ap5ad"]
 [ext_resource type="AudioStream" uid="uid://iyd5jjk3j5gx" path="res://assets/music/princess-tower_r1_session.wav" id="7_dfrau"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="8_41grv"]
+[ext_resource type="FontFile" uid="uid://ca7ca7it3xyv" path="res://assets/fonts/ARCADE_I.TTF" id="8_y68x8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndc6u"]
 albedo_color = Color(0, 0.4, 0.08, 1)
@@ -142,3 +144,57 @@ skeleton = NodePath("../..")
 [node name="Princess-towerR1Session" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_dfrau")
 autoplay = true
+
+[node name="HUD" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("8_41grv")
+
+[node name="LabelCoins" type="Label" parent="HUD"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = -102.0
+offset_right = 116.0
+offset_bottom = -79.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("8_y68x8")
+text = "COINS:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelFairies" type="Label" parent="HUD"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = -69.0
+offset_right = 148.0
+offset_bottom = -46.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("8_y68x8")
+text = "FAIRIES:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelKills" type="Label" parent="HUD"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = -34.0
+offset_right = 116.0
+offset_bottom = -11.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("8_y68x8")
+text = "kills:"
+horizontal_alignment = 1
+vertical_alignment = 1
