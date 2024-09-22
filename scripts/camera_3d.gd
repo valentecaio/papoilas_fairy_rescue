@@ -19,9 +19,14 @@ func _ready():
 
 
 func _physics_process(delta: float) -> void:
-    var dir = Input.get_axis("turn_left", "turn_right")
-    base.rotate(Vector3(0,1,0), deg_to_rad(-dir*delta*50))
-    
+    # reset tower rotation if player is moving
+    var dir = Vector2(Input.get_axis("left", "right"), Input.get_axis("up", "down")).normalized()
+    if dir or Input.is_action_just_pressed("jump"):
+        base.rotation = Vector3.ZERO
+    else:
+      var turn_dir = Input.get_axis("turn_left", "turn_right")
+      base.rotate(Vector3(0,1,0), deg_to_rad(-turn_dir*delta*25))
+
     var cur_player_pos = Global.player_position
     var angle = deg_to_rad(cur_player_pos.x * 360.0 / 1024)
     var uv_center = angle / (2 * PI)

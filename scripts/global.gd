@@ -1,6 +1,7 @@
 # Global autoload
 
 extends Node
+
 # width of stage, used to wrap player and enemies around the screen
 const stage_w := 1024
 
@@ -17,7 +18,7 @@ var player_coins :
     get():
         return player_coins
 
-var player_fairies :
+var player_fairies : int:
     set(value):
         player_fairies = value
         fairy_soundplayer.play()
