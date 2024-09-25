@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://cx0q67s3furhs"]
+[gd_scene load_steps=60 format=3 uid="uid://cx0q67s3furhs"]
 
 [ext_resource type="Script" path="res://scripts/princess.gd" id="1_haw0a"]
 [ext_resource type="Texture2D" uid="uid://ddftu4v1et0sq" path="res://assets/sprites/unused/princess.png" id="2_2rjkl"]
@@ -412,9 +412,13 @@ height = 18.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fgbk"]
 size = Vector2(4, 17)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_qyvo6"]
+radius = 1.0
+
 [node name="Princess" type="CharacterBody2D"]
 z_index = 20
 collision_layer = 2
+collision_mask = 17
 script = ExtResource("1_haw0a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -429,7 +433,7 @@ position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_1qape")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -13)
+position = Vector2(42, -15)
 sprite_frames = SubResource("SpriteFrames_ipo77")
 animation = &"idle"
 autoplay = "idle"
@@ -455,4 +459,22 @@ collision_mask = 8
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(0, -6.5)
 shape = SubResource("RectangleShape2D_8fgbk")
+debug_color = Color(0, 1, 0, 0.196078)
+
+[node name="Area2DDown" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DDown"]
+position = Vector2(0, 7)
+shape = SubResource("CircleShape2D_qyvo6")
+debug_color = Color(0, 1, 0, 0.196078)
+
+[node name="Area2DDown2" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DDown2"]
+position = Vector2(0, 7)
+shape = SubResource("CircleShape2D_qyvo6")
 debug_color = Color(0, 1, 0, 0.196078)

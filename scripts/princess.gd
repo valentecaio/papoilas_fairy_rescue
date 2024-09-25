@@ -7,6 +7,8 @@ var climbing := false
 
 @onready var area_2d:   Area2D = $Area2D
 @onready var area_2d_2: Area2D = $Area2D2
+@onready var area_2d_down:   Area2D = $Area2DDown
+@onready var area_2d_down_2: Area2D = $Area2DDown2
 @onready var collision_shape_2d:   CollisionShape2D = $CollisionShape2D
 @onready var collision_shape_2d_2: CollisionShape2D = $CollisionShape2D2
 @onready var animated_sprite_2d:   AnimatedSprite2D = $AnimatedSprite2D
@@ -22,6 +24,7 @@ func _ready():
     animated_sprite_2d_2.position.x = Global.stage_w
     collision_shape_2d_2.position.x = Global.stage_w
     area_2d_2.position.x = Global.stage_w
+    area_2d_down_2.position.x = Global.stage_w
     flip_sprites(true)
 
 
@@ -72,9 +75,19 @@ func process_default(delta, dir):
 
     # go to climbing state
     # !dir.x avoids blinking states when pressing diagonally
-    if is_on_ladder() and dir.y and !dir.x:
-        climbing = true
-        velocity = Vector2.ZERO
+    if dir.y and !dir.x:
+        # ladder detected, start climbing
+        if is_on_ladder():
+            start_climbing()
+
+        # above a ladder, go down
+        if is_above_ladder() and dir.y > 0:
+            # blink collision with ladder_tops layer for a smoother transition
+            self.collision_mask = 1       # only mid layer
+            await get_tree().create_timer(0.2).timeout
+            self.collision_mask = 1 + 16  # mid and ladder_tops layers
+            start_climbing()
+
 
 
 func process_climb(_delta, dir):
@@ -122,6 +135,16 @@ func is_on_ladder():
         if area.get_overlapping_bodies():
             return true
     return false
+
+func is_above_ladder():
+    var bodies = area_2d_down.get_overlapping_bodies() + area_2d_down_2.get_overlapping_bodies()
+    return bodies.size() > 0
+
+func start_climbing():
+    climbing = true
+    velocity = Vector2.ZERO
+    play("climb")
+
 
 
 ### CALLED BY OTHER SCRIPTS ###

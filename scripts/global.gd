@@ -10,14 +10,14 @@ signal open_hatch()
 var fairy_soundplayer = preload("res://scenes/fairy_sound.tscn").instantiate()
 var coin_soundplayer = preload("res://scenes/coin_sound.tscn").instantiate()
 
+
 ### player stats ###
-var player_coins :
+
+var player_coins : int:
     set(value):
         player_coins = value
         if (value > 0):
             coin_soundplayer.play()
-    get():
-        return player_coins
 
 var player_fairies : int:
     set(value):
@@ -26,8 +26,6 @@ var player_fairies : int:
             fairy_soundplayer.play()
         if value == 5:
             open_hatch.emit()
-    get():
-        return player_fairies
 
 var player_kills
 
@@ -46,6 +44,9 @@ var player_position: Vector2:
       if player_position.x < 0:
         player_position.x = stage_w + pos.x
 
+
+
+### game state ###
 
 func _ready():
     add_child(fairy_soundplayer)
