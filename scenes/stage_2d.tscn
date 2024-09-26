@@ -794,17 +794,18 @@ offset_right = 732.0
 offset_bottom = 313.0
 theme_override_fonts/font = ExtResource("13_8a3q6")
 theme_override_font_sizes/font_size = 8
-text = "Press W or arrow up to climb ladders."
+text = "Press W or D to
+climb ladders."
 autowrap_mode = 2
 
 [node name="BegginingLabel4" type="Label" parent="."]
 custom_minimum_size = Vector2(500, 0)
-offset_left = 745.0
-offset_top = 151.0
+offset_left = 735.0
+offset_top = 146.0
 offset_right = 1245.0
 offset_bottom = 203.0
 theme_override_fonts/font = ExtResource("13_8a3q6")
 theme_override_font_sizes/font_size = 8
-text = "Watch for
-the bats..."
+text = "Watch out for the
+monsters..."
 autowrap_mode = 2

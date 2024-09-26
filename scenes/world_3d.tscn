@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://d0xypoxt833e5"]
+[gd_scene load_steps=26 format=3 uid="uid://d0xypoxt833e5"]
 
 [ext_resource type="Script" path="res://scripts/camera_3d.gd" id="1_35l0t"]
 [ext_resource type="Script" path="res://scripts/world_3d.gd" id="1_tdc3r"]
@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://iyd5jjk3j5gx" path="res://assets/music/princess-tower_r1_session.wav" id="7_dfrau"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="8_41grv"]
 [ext_resource type="FontFile" uid="uid://wff6hctsod50" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="10_e1my0"]
+[ext_resource type="Texture2D" uid="uid://dcd4btx7xlcks" path="res://assets/sprites/controls.png" id="11_efhjy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndc6u"]
 albedo_color = Color(0, 0.4, 0.08, 1)
@@ -215,6 +216,22 @@ theme_override_fonts/font = ExtResource("10_e1my0")
 text = "KILLS:"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -238.0
+offset_top = -246.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.7, 0.7)
+pivot_offset = Vector2(230, 240)
+localize_numeral_system = false
+texture = ExtResource("11_efhjy")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_vptxo")
