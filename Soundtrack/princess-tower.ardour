@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session version="7003" name="princess-tower" sample-rate="48000" session-range-is-free="0" id-counter="5081" rg-counter="102" name-counter="1" event-counter="179012" vca-counter="1">
+  <ProgramVersion created-with="Ardour 8.6-462-g24fe6adb02" modified-with="Ardour 8.6-462-g24fe6adb02"/>
+  <EngineHints backend="ALSA" input-device="G535 Wireless Gaming Headset" output-device="G535 Wireless Gaming Headset"/>
+  <MIDIPorts>
+    <Port name="Cue Control in" type="midi" direction="Input"/>
+    <Port name="MIDI Clock out" type="midi" direction="Output"/>
+    <Port name="MMC in" type="midi" direction="Input"/>
+    <Port name="MMC out" type="midi" direction="Output"/>
+    <Port name="MTC out" type="midi" direction="Output"/>
+    <Port name="Scene in" type="midi" direction="Input"/>
+    <Port name="Scene out" type="midi" direction="Output"/>
+    <Port name="x-virtual-keyboard" type="midi" direction="Output">
+      <Connection other="Dexed/midi_in 1"/>
+      <Connection other="Geonkick Single/midi_in 1"/>
+      <Connection other="TAL-NoiseMaker/midi_in 1"/>
+    </Port>
+  </MIDIPorts>
+  <Config>
+    <Option name="use-region-fades" value="1"/>
+    <Option name="use-transport-fades" value="1"/>
+    <Option name="use-monitor-fades" value="1"/>
+    <Option name="native-file-data-format" value="FormatFloat"/>
+    <Option name="native-file-header-format" value="WAVE"/>
+    <Option name="auto-play" value="0"/>
+    <Option name="auto-return" value="1"/>
+    <Option name="auto-input" value="1"/>
+    <Option name="triggerbox-overrides-disk-monitoring" value="1"/>
+    <Option name="cue-behavior" value="FollowCues"/>
+    <Option name="punch-in" value="0"/>
+    <Option name="punch-out" value="0"/>
+    <Option name="count-in" value="0"/>
+    <Option name="session-monitoring" value=""/>
+    <Option name="record-mode" value="RecLayered"/>
+    <Option name="draw-opaque-midi_regions" value="0"/>
+    <Option name="subframes-per-frame" value="100"/>
+    <Option name="timecode-format" value="timecode_30"/>
+    <Option name="minitimeline-span" value="120"/>
+    <Option name="raid-path" value=""/>
+    <Option name="audio-search-path" value=""/>
+    <Option name="midi-search-path" value=""/>
+    <Option name="track-name-number" value="0"/>
+    <Option name="track-name-take" value="1"/>
+    <Option name="take-name" value="Take3"/>
+    <Option name="jack-time-master" value="1"/>
+    <Option name="use-video-sync" value="0"/>
+    <Option name="video-pullup" value="0"/>
+    <Option name="external-sync" value="0"/>
+    <Option name="insert-merge-policy" value="InsertMergeRelax"/>
+    <Option name="timecode-offset" value="0"/>
+    <Option name="timecode-offset-negative" value="1"/>
+    <Option name="slave-timecode-offset" value=" 00:00:00:00"/>
+    <Option name="timecode-generator-offset" value=" 00:00:00:00"/>
+    <Option name="midi-copy-is-fork" value="1"/>
+    <Option name="tracks-follow-session-time" value="0"/>
+    <Option name="realtime-export" value="0"/>
+    <Option name="use-surround-master" value="0"/>
+    <Option name="use-video-file-fps" value="0"/>
+    <Option name="videotimeline-pullup" value="1"/>
+    <Option name="wave-amplitude-zoom" value="0"/>
+    <Option name="wave-zoom-factor" value="2"/>
+    <Option name="show-summary" value="1"/>
+    <Option name="show-group-tabs" value="1"/>
+    <Option name="show-region-fades" value="1"/>
+    <Option name="show-busses-on-meterbridge" value="0"/>
+    <Option name="show-master-on-meterbridge" value="1"/>
+    <Option name="show-midi-on-meterbridge" value="1"/>
+    <Option name="show-rec-on-meterbridge" value="1"/>
+    <Option name="show-mute-on-meterbridge" value="0"/>
+    <Option name="show-solo-on-meterbridge" value="0"/>
+    <Option name="show-monitor-on-meterbridge" value="0"/>
+    <Option name="show-name-on-meterbridge" value="1"/>
+    <Option name="show-fader-on-meterbridge" value="0"/>
+    <Option name="meterbridge-label-height" value="0"/>
+    <Option name="show-master-bus-comment-on-load" value="0"/>
+    <Option name="default-time-domain" value="AudioTime"/>
+  </Config>
+  <Metadata/>
+  <Sources>
+    <Source name="Take2_Dexed-2.mid" take-id="2024-09-21 17.54.40" type="midi" flags="Writable,CanRename" id="1480" natural-position="a0" captured-for="Dexed" origin=""/>
+    <Source name="Take2_Dexed-1.mid" take-id="" type="midi" flags="Writable,CanRename,Removable,RemovableIfEmpty,Empty" id="1483" origin=""/>
+    <Source name="Take3_Dexed-1.mid" take-id="" type="midi" flags="Writable,CanRename,Removable,RemovableIfEmpty,Empty" id="1518" origin=""/>
+    <Source name="Take3_Dexed-2.mid" take-id="" type="midi" flags="Writable,CanRename,Removable,RemovableIfEmpty,Empty" id="1528" origin=""/>
+    <Source name="Take3_Dexed-3.mid" take-id="" type="midi" flags="Writable,CanRename,Removable,RemovableIfEmpty,Empty" id="1537" origin=""/>
+    <Source name="Take3_Dexed-4.mid" take-id="" type="midi" flags="Writable,CanRename,Removable,RemovableIfEmpty,Empty" id="1548" origin=""/>
+    <Source name="Take3_Dexed-5.mid" take-id="" type="midi" flags="Writable,CanRename" id="1557" origin=""/>
+    <Source name="Take3_Dexed-7.mid" take-id="" type="midi" flags="Writable,CanRename" id="1688" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-2.mid" take-id="" type="midi" flags="Writable,CanRename" id="1949" origin=""/>
+    <Source name="Geonkick Single-4.mid" take-id="" type="midi" flags="Writable,CanRename" id="2296" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-5.mid" take-id="" type="midi" flags="Writable,CanRename" id="2403" natural-position="a0" origin=""/>
+    <Source name="Take3_Geonkick Single-2.mid" take-id="" type="midi" flags="Writable,CanRename,Removable,RemovableIfEmpty,Empty" id="4054" origin=""/>
+    <Source name="Take3_Geonkick Single-3.mid" take-id="" type="midi" flags="Writable,CanRename" id="4064" origin=""/>
+    <Source name="Take3_Dexed-9.mid" take-id="" type="midi" flags="Writable,CanRename" id="4150" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-3.mid" take-id="" type="midi" flags="Writable,CanRename" id="4161" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-6.mid" take-id="" type="midi" flags="Writable,CanRename" id="4172" natural-position="a0" origin=""/>
+    <Source name="Take3_Dexed-10.mid" take-id="" type="midi" flags="Writable,CanRename" id="4183" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-7.mid" take-id="" type="midi" flags="Writable,CanRename" id="4191" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-8.mid" take-id="" type="midi" flags="Writable,CanRename" id="4199" natural-position="a0" origin=""/>
+    <Source name="Take3_Dexed-11.mid" take-id="" type="midi" flags="Writable,CanRename" id="4218" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-9.mid" take-id="" type="midi" flags="Writable,CanRename" id="4226" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-10.mid" take-id="" type="midi" flags="Writable,CanRename" id="4234" natural-position="a0" origin=""/>
+    <Source name="Take3_Dexed-12.mid" take-id="" type="midi" flags="Writable,CanRename" id="4532" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-11.mid" take-id="" type="midi" flags="Writable,CanRename,Empty" id="4745" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-12.mid" take-id="" type="midi" flags="Writable,CanRename" id="4753" natural-position="a0" origin=""/>
+    <Source name="Geonkick Single-13.mid" take-id="" type="midi" flags="Writable,CanRename,Removable,RemovableIfEmpty,Empty" id="4958" natural-position="a0" origin=""/>
+  </Sources>
+  <TriggerBindings/>
+  <Regions>
+    <Region name="Take2_Dexed-1" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b5760" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1485" type="midi" first-edit="nothing" source-0="1483" master-source-0="1483"/>
+    <Region name="Take2_Dexed-2" muted="0" opaque="1" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b46499@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1495" type="midi" first-edit="nothing" source-0="1480" master-source-0="1480"/>
+    <Region name="Take2_Dexed-2.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b51937@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="1" tags="" contents="0" rgroup="32" id="1498" type="midi" first-edit="nothing" source-0="1480" master-source-0="1480"/>
+    <Region name="Take3_Dexed-1" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b2400" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1520" type="midi" first-edit="nothing" source-0="1518" master-source-0="1518"/>
+    <Region name="Take3_Dexed-2" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1530" type="midi" first-edit="nothing" source-0="1528" master-source-0="1528"/>
+    <Region name="Take3_Dexed-3" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b3840" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1539" type="midi" first-edit="nothing" source-0="1537" master-source-0="1537"/>
+    <Region name="Take3_Dexed-4" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1550" type="midi" first-edit="nothing" source-0="1548" master-source-0="1548"/>
+    <Region name="Take3_Dexed-5" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1559" type="midi" first-edit="nothing" source-0="1557" master-source-0="1557"/>
+    <Region name="Take3_Dexed-5.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b7680@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1683" type="midi" first-edit="nothing" source-0="1557" master-source-0="1557"/>
+    <Region name="Take3_Dexed-7.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b7680@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="1690" type="midi" first-edit="nothing" source-0="1688" master-source-0="1688"/>
+    <Region name="Take3_Dexed-5.3" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="1" hidden="0" position-locked="0" valid-transients="0" start="b30720" length="b7200@b46080" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="1745" type="midi" first-edit="nothing" source-0="1557" master-source-0="1557"/>
+    <Region name="Geonkick Single-2" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1951" type="midi" first-edit="nothing" source-0="1949" master-source-0="1949"/>
+    <Region name="Take3_Geonkick Single-2" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b960" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="4056" type="midi" first-edit="nothing" source-0="4054" master-source-0="4054"/>
+    <Region name="Take3_Geonkick Single-3" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b1920@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="4066" type="midi" first-edit="nothing" source-0="4064" master-source-0="4064"/>
+    <Region name="Take3_Dexed-9.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="1" tags="" contents="0" rgroup="0" id="4152" type="midi" first-edit="nothing" source-0="4150" master-source-0="4150"/>
+    <Region name="Take3_Dexed-9.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="4157" type="midi" first-edit="nothing" source-0="4150" master-source-0="4150"/>
+    <Region name="Geonkick Single-3.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="1" tags="" contents="0" rgroup="0" id="4163" type="midi" first-edit="nothing" source-0="4161" master-source-0="4161"/>
+    <Region name="Geonkick Single-3.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="4168" type="midi" first-edit="nothing" source-0="4161" master-source-0="4161"/>
+    <Region name="Geonkick Single-6.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="1" tags="" contents="0" rgroup="0" id="4174" type="midi" first-edit="nothing" source-0="4172" master-source-0="4172"/>
+    <Region name="Geonkick Single-6.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="4179" type="midi" first-edit="nothing" source-0="4172" master-source-0="4172"/>
+    <Region name="Take3_Dexed-10.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b46080" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="4207" type="midi" first-edit="nothing" source-0="4183" master-source-0="4183"/>
+    <Region name="Take3_Dexed-11.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b76800" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="3" tags="" contents="0" rgroup="0" id="4242" type="midi" first-edit="nothing" source-0="4218" master-source-0="4218"/>
+    <Region name="Geonkick Single-9.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b76800" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="3" tags="" contents="0" rgroup="0" id="4244" type="midi" first-edit="nothing" source-0="4226" master-source-0="4226"/>
+    <Region name="Geonkick Single-10.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b76800" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="4246" type="midi" first-edit="nothing" source-0="4234" master-source-0="4234"/>
+    <Region name="Geonkick Single-11.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="4761" type="midi" first-edit="nothing" source-0="4745" master-source-0="4745"/>
+    <Region name="Geonkick Single-12.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b94080" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="4763" type="midi" first-edit="nothing" source-0="4753" master-source-0="4753"/>
+    <Region name="Geonkick Single-13.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="4960" type="midi" first-edit="nothing" source-0="4958" master-source-0="4958"/>
+    <Region name="Geonkick Single-13.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b11040" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="4966" type="midi" first-edit="nothing" source-0="4958" master-source-0="4958"/>
+  </Regions>
+  <Selection/>
+  <Locations>
+    <Location id="1489" name="session" start="a0" end="a5890225320" flags="IsSessionRange" locked="0" timestamp="1726952023" cue="0"/>
+    <Location id="1631" name="verse" start="a1128960000" end="a1128960000" flags="IsMark,IsSection" locked="0" timestamp="1726952415" cue="0"/>
+    <Location id="1639" name="intro" start="a0" end="a0" flags="IsMark,IsSection" locked="0" timestamp="1726952419" cue="0"/>
+    <Location id="1756" name="Loop" start="a0" end="a5890225320" flags="IsAutoLoop" locked="0" timestamp="1726952656" cue="0"/>
+  </Locations>
+  <Bundles/>
+  <VCAManager/>
+  <Routes>
+    <Route version="7003" id="71" name="Master" default-type="audio" strict-io="1" volume-applies-to-output="1" active="1" denormal-protection="0" meter-point="MeterOutput" disk-io-point="DiskIOPreFader" meter-type="MeterK14">
+      <PresentationInfo order="0" flags="MasterOut,OrderSet" color="2855877119"/>
+      <Controllable name="solo" id="79" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="85" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="87" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Master" id="99" direction="Input" default-type="audio">
+        <Port name="Master/audio_in 1" type="audio" direction="Input">
+          <Connection other="Dexed/audio_out 1"/>
+          <Connection other="Geonkick Single/audio_out 1"/>
+          <Connection other="TAL-NoiseMaker/audio_out 1"/>
+        </Port>
+        <Port name="Master/audio_in 2" type="audio" direction="Input">
+          <Connection other="Dexed/audio_out 2"/>
+          <Connection other="Geonkick Single/audio_out 2"/>
+          <Connection other="TAL-NoiseMaker/audio_out 2"/>
+        </Port>
+      </IO>
+      <IO name="Master" id="100" direction="Output" default-type="audio">
+        <Port name="Master/audio_out 1" type="audio" direction="Output">
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset"/>
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset" other="system:playback_1"/>
+        </Port>
+        <Port name="Master/audio_out 2" type="audio" direction="Output">
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset"/>
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset" other="system:playback_2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main,SurroundSend" muted="0"/>
+      <Controllable name="mute" id="81" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="83" flags="Toggle" value="0" phase-invert="00"/>
+      <Controllable name="mastervolume" id="107" flags="GainLike,NotAutomatable" value="1"/>
+      <Automation>
+        <AutomationList automation-id="solo" id="78" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+        <AutomationList automation-id="solo-iso" id="84" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+        <AutomationList automation-id="solo-safe" id="86" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+        <AutomationList automation-id="mute" id="80" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+        <AutomationList automation-id="phase" id="82" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+      </Automation>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="90" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="94" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="92" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="96" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="98" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="89" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="91" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="93" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="95" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="97" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="102" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="103" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Automation>
+          <AutomationList automation-id="trim" id="76" interpolation-style="Logarithmic" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="trimcontrol" id="77" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="101" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Automation>
+          <AutomationList automation-id="gain" id="74" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="gaincontrol" id="75" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="105" name="Master" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Master" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Processor id="104" name="meter-Master" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Slavable/>
+    </Route>
+    <Route version="7003" id="469" name="Dexed" default-type="midi" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" midi-playlist="547" alignment-choice="Automatic" playback-channel-mode="AllChannels" capture-channel-mode="AllChannels" playback-channel-mask="0xffff" capture-channel-mask="0xffff" note-mode="Sustained" step-editing="0" input-active="1" restore-pgm="1">
+      <PresentationInfo order="1" flags="MidiTrack,OrderSet,TriggerTrack" color="3563743999"/>
+      <Controllable name="solo" id="510" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="516" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="518" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Dexed" id="530" direction="Input" default-type="midi">
+        <Port name="Dexed/midi_in 1" type="midi" direction="Input">
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset"/>
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset" other="system:midi_capture_fb36d90"/>
+        </Port>
+      </IO>
+      <IO name="Dexed" id="531" direction="Output" default-type="midi">
+        <Port name="Dexed/audio_out 1" type="audio" direction="Output">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port name="Dexed/audio_out 2" type="audio" direction="Output">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+        <Port name="Dexed/midi_out 1" type="midi" direction="Output"/>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main,SurroundSend" muted="0"/>
+      <Controllable name="mute" id="512" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="514" flags="Toggle" value="0" phase-invert=""/>
+      <Automation>
+        <AutomationList automation-id="solo" id="509" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-iso" id="515" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-safe" id="517" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="mute" id="511" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-enable" id="541" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-safe" id="543" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="phase" id="513" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="monitor" id="545" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="midi-velocity" id="551" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+      </Automation>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="521" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="525" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="523" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="527" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="529" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="520" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="522" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="524" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="526" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="528" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="540" name="recorder:Dexed" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="539" name="player:Dexed" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="472" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="midi" order="0">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+        </Triggers>
+      </Processor>
+      <Processor id="533" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="571" name="Dexed" active="1" user-latency="0" use-user-latency="0" type="vst3" unique-id="ABCDEF019182FAEB4447534244657864" count="1" custom="0">
+        <Automation>
+          <AutomationList automation-id="parameter-0" id="572" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-1" id="574" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-2" id="576" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-3" id="578" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-4" id="580" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-5" id="582" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-6" id="584" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-7" id="586" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-8" id="588" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-9" id="590" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-10" id="592" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-11" id="594" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-12" id="596" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-13" id="598" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-14" id="600" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-15" id="602" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-16" id="604" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-17" id="606" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-18" id="608" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-19" id="610" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-20" id="612" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-21" id="614" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-22" id="616" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-23" id="618" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-24" id="620" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-25" id="622" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-26" id="624" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-27" id="626" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-28" id="628" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-29" id="630" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-30" id="632" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-31" id="634" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-32" id="636" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-33" id="638" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-34" id="640" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-35" id="642" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-36" id="644" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-37" id="646" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-38" id="648" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-39" id="650" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-40" id="652" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-41" id="654" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-42" id="656" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-43" id="658" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-44" id="660" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-45" id="662" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-46" id="664" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-47" id="666" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-48" id="668" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-49" id="670" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-50" id="672" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-51" id="674" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-52" id="676" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-53" id="678" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-54" id="680" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-55" id="682" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-56" id="684" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-57" id="686" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-58" id="688" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-59" id="690" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-60" id="692" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-61" id="694" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-62" id="696" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-63" id="698" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-64" id="700" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-65" id="702" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-66" id="704" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-67" id="706" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-68" id="708" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-69" id="710" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-70" id="712" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-71" id="714" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-72" id="716" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-73" id="718" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-74" id="720" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-75" id="722" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-76" id="724" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-77" id="726" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-78" id="728" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-79" id="730" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-80" id="732" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-81" id="734" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-82" id="736" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-83" id="738" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-84" id="740" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-85" id="742" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-86" id="744" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-87" id="746" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-88" id="748" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-89" id="750" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-90" id="752" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-91" id="754" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-92" id="756" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-93" id="758" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-94" id="760" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-95" id="762" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-96" id="764" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-97" id="766" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-98" id="768" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-99" id="770" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-100" id="772" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-101" id="774" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-102" id="776" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-103" id="778" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-104" id="780" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-105" id="782" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-106" id="784" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-107" id="786" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-108" id="788" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-109" id="790" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-110" id="792" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-111" id="794" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-112" id="796" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-113" id="798" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-114" id="800" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-115" id="802" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-116" id="804" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-117" id="806" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-118" id="808" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-119" id="810" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-120" id="812" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-121" id="814" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-122" id="816" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-123" id="818" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-124" id="820" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-125" id="822" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-126" id="824" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-127" id="826" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-128" id="828" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-129" id="830" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-130" id="832" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-131" id="834" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-132" id="836" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-133" id="838" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-134" id="840" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-135" id="842" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-136" id="844" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-137" id="846" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-138" id="848" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-139" id="850" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-140" id="852" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-141" id="854" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-142" id="856" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-143" id="858" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-144" id="860" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-145" id="862" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-146" id="864" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-147" id="866" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-148" id="868" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-149" id="870" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-150" id="872" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-151" id="874" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-152" id="876" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-153" id="878" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-154" id="880" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-155" id="882" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-156" id="884" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        </Automation>
+        <ConfiguredInput>
+          <Channels type="midi" count="1"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="midi" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+          <Channels type="midi" count="1"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="midi" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+          <Channelmap type="midi" from="0" to="0"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <vst3 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1">
+          <Port id="2029770765" value="1"/>
+          <Port id="13936686" value="0"/>
+          <Port id="225838369" value="1"/>
+          <Port id="1887707974" value="0"/>
+          <Port id="1410798685" value="0.5"/>
+          <Port id="864601167" value="0.22580644488334656"/>
+          <Port id="591125381" value="0.57142859697341919"/>
+          <Port id="1754130429" value="1"/>
+          <Port id="2051120732" value="0.37373736500740051"/>
+          <Port id="2036946840" value="0"/>
+          <Port id="76906603" value="0.030303031206130981"/>
+          <Port id="1852039002" value="0"/>
+          <Port id="894251399" value="1"/>
+          <Port id="1451743780" value="0"/>
+          <Port id="1692075801" value="0.25"/>
+          <Port id="1417310346" value="0.28571429848670959"/>
+          <Port id="522313007" value="1"/>
+          <Port id="522313008" value="1"/>
+          <Port id="522313009" value="1"/>
+          <Port id="522313010" value="1"/>
+          <Port id="245668343" value="0.50505048036575317"/>
+          <Port id="245668344" value="0.50505048036575317"/>
+          <Port id="245668345" value="0.50505048036575317"/>
+          <Port id="245668346" value="0.50505048036575317"/>
+          <Port id="2101108863" value="0.52525252103805542"/>
+          <Port id="2101108864" value="1"/>
+          <Port id="2101108865" value="0.35353535413742065"/>
+          <Port id="2101108866" value="0.4444444477558136"/>
+          <Port id="1943699623" value="0.64646464586257935"/>
+          <Port id="1943699624" value="1"/>
+          <Port id="1943699625" value="0"/>
+          <Port id="1943699626" value="0"/>
+          <Port id="501240629" value="1"/>
+          <Port id="1811150163" value="0"/>
+          <Port id="755815801" value="0.064516127109527588"/>
+          <Port id="809808132" value="0"/>
+          <Port id="193438730" value="0.5"/>
+          <Port id="553854271" value="0"/>
+          <Port id="1140059305" value="0"/>
+          <Port id="1527124911" value="0"/>
+          <Port id="963987333" value="0"/>
+          <Port id="919697419" value="0"/>
+          <Port id="952343511" value="0.57142859697341919"/>
+          <Port id="873756138" value="0"/>
+          <Port id="1124799822" value="1"/>
+          <Port id="1232880356" value="1"/>
+          <Port id="304157504" value="1"/>
+          <Port id="304157505" value="0.78787881135940552"/>
+          <Port id="304157506" value="0.57575756311416626"/>
+          <Port id="304157507" value="0.50505048036575317"/>
+          <Port id="2072782342" value="0.80808079242706299"/>
+          <Port id="2072782343" value="1"/>
+          <Port id="2072782344" value="0.60606062412261963"/>
+          <Port id="2072782345" value="0"/>
+          <Port id="2143165652" value="0.85858583450317383"/>
+          <Port id="1839779314" value="0"/>
+          <Port id="559302296" value="0.064516127109527588"/>
+          <Port id="405134819" value="1"/>
+          <Port id="322521449" value="0.5"/>
+          <Port id="260451264" value="0.29292929172515869"/>
+          <Port id="500127466" value="0"/>
+          <Port id="887193072" value="0"/>
+          <Port id="670584326" value="0"/>
+          <Port id="626294412" value="0"/>
+          <Port id="446784886" value="0.4285714328289032"/>
+          <Port id="580353131" value="0"/>
+          <Port id="619241197" value="1"/>
+          <Port id="828207043" value="1"/>
+          <Port id="654689793" value="0.66666668653488159"/>
+          <Port id="654689794" value="1"/>
+          <Port id="654689795" value="0.66666668653488159"/>
+          <Port id="654689796" value="0.52525252103805542"/>
+          <Port id="54381413" value="0.70707070827484131"/>
+          <Port id="54381414" value="0.93939393758773804"/>
+          <Port id="54381415" value="0"/>
+          <Port id="54381416" value="0"/>
+          <Port id="1637607027" value="1"/>
+          <Port id="1868408465" value="0"/>
+          <Port id="362788791" value="0.25806450843811035"/>
+          <Port id="461506" value="0.080808080732822418"/>
+          <Port id="451604168" value="0.5"/>
+          <Port id="2114531905" value="0.43434342741966248"/>
+          <Port id="2007679275" value="0"/>
+          <Port id="247261233" value="0"/>
+          <Port id="377181319" value="0"/>
+          <Port id="332891405" value="1"/>
+          <Port id="2088709909" value="0.4285714328289032"/>
+          <Port id="286950124" value="0"/>
+          <Port id="113682572" value="1"/>
+          <Port id="423533730" value="1"/>
+          <Port id="1005222082" value="0.57575756311416626"/>
+          <Port id="1005222083" value="1"/>
+          <Port id="1005222084" value="0.18181818723678589"/>
+          <Port id="1005222085" value="0.28282827138900757"/>
+          <Port id="183464132" value="0.8888888955116272"/>
+          <Port id="183464133" value="1"/>
+          <Port id="183464134" value="0"/>
+          <Port id="183464135" value="0"/>
+          <Port id="1132048402" value="0.75757575035095215"/>
+          <Port id="1897037616" value="0"/>
+          <Port id="166275286" value="0.032258063554763794"/>
+          <Port id="1743271841" value="0.010101010091602802"/>
+          <Port id="580686887" value="0.5"/>
+          <Port id="1821128898" value="0.29292929172515869"/>
+          <Port id="1367747436" value="0"/>
+          <Port id="1754813042" value="0"/>
+          <Port id="83778312" value="0"/>
+          <Port id="39488398" value="0"/>
+          <Port id="1583151284" value="0.57142859697341919"/>
+          <Port id="2141030765" value="0"/>
+          <Port id="1755607595" value="0.71428573131561279"/>
+          <Port id="18860417" value="1"/>
+          <Port id="1355754371" value="1"/>
+          <Port id="1355754372" value="0.80808079242706299"/>
+          <Port id="1355754373" value="0.24242424964904785"/>
+          <Port id="1355754374" value="0.39393940567970276"/>
+          <Port id="312546851" value="1"/>
+          <Port id="312546852" value="0.89898991584777832"/>
+          <Port id="312546853" value="0.66666668653488159"/>
+          <Port id="312546854" value="0"/>
+          <Port id="626489777" value="0.81818181276321411"/>
+          <Port id="1925666767" value="0"/>
+          <Port id="2117245429" value="0.38709676265716553"/>
+          <Port id="1338598528" value="0"/>
+          <Port id="709769606" value="0.5"/>
+          <Port id="1527725891" value="0.40404039621353149"/>
+          <Port id="727815597" value="0.060606062412261963"/>
+          <Port id="1114881203" value="0.090909093618392944"/>
+          <Port id="1937858953" value="1"/>
+          <Port id="1893569039" value="0"/>
+          <Port id="1077592659" value="0"/>
+          <Port id="1847627758" value="0"/>
+          <Port id="1250048970" value="0.1428571492433548"/>
+          <Port id="1761670752" value="1"/>
+          <Port id="1706286660" value="0.89898991584777832"/>
+          <Port id="1706286661" value="1"/>
+          <Port id="1706286662" value="0.54545456171035767"/>
+          <Port id="1706286663" value="0.28282827138900757"/>
+          <Port id="441629570" value="0.60606062412261963"/>
+          <Port id="441629571" value="0.96969699859619141"/>
+          <Port id="441629572" value="0"/>
+          <Port id="441629573" value="0"/>
+          <Port id="120931152" value="0.75757575035095215"/>
+          <Port id="1954295918" value="0"/>
+          <Port id="1920731924" value="1"/>
+          <Port id="933925215" value="0.38383838534355164"/>
+          <Port id="838852325" value="0.5"/>
+          <Port id="1234322884" value="0.32323232293128967"/>
+          <Port id="87883758" value="0"/>
+          <Port id="474949364" value="0"/>
+          <Port id="1644455946" value="0"/>
+          <Port id="1600166032" value="0"/>
+          <Port id="572034034" value="0.4285714328289032"/>
+          <Port id="1554224751" value="0"/>
+          <Port id="744490345" value="0.57142859697341919"/>
+          <Port id="1356997439" value="1"/>
+          <Port id="156" value="0"/>
+          <chunk>VlNUMwEAAABBQkNERUYwMTkxODJGQUVCNDQ0NzUzNDI0NDY1Nzg2NIQYAAAAAAAAVkMyIQ8YAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8ZGV4ZWRTdGF0ZSBjdXRvZmY9IjEuMCIgcmVzbz0iMC4wIiBnYWluPSIxLjAiIGN1cnJlbnRQcm9ncmFtPSIyNCIgZW5naW5lVHlwZT0iMSIgbWFzdGVyVHVuZT0iMCIgb3BTd2l0Y2g9IjExMTExMSIgdHJhbnNwb3NlMTJBc1NjYWxlPSIxIiBtcGVFbmFibGVkPSIwIiBtcGVQaXRjaEJlbmRSYW5nZT0iMjQiIHdoZWVsTW9kPSIwIDAgMCAwIiBmb290TW9kPSIwIDAgMCAwIiBicmVhdGhNb2Q9IjAgMCAwIDAiIGFmdGVydG91Y2hNb2Q9IjAgMCAwIDAiIGFjdGl2ZUZpbGVDYXJ0cmlkZ2U9Ii9ob21lL2JydW5vLy5sb2NhbC9zaGFyZS9EaWdpdGFsU3VidXJiYW4vRGV4ZWQvQ2FydHJpZGdlcy90b3dlci1wcmluY2Vzcy5zeXgiPjxkZXhlZEJsb2IgYmFzZTY0OnN5c2V4PSI0MTA0LnZPRC5JLkIuREVGUDFua1dPLi4uLi4uLnl3Lk9sLnZYZzRpTWlNbFYuLi4uLi52Yi5iVUouYlNGWUR6WGkwRS4uLi4uLkhHLlBRLi43RDFRMW5rV3guLi4uLi4ueUEuVFAudlhnNGlNaU1sVi4uLi4uLnZiLnpqLi5iU0ZZRHpYaTBFLi4uLi4uSEcuUFEuLmRNelc3SGlMeEhpLk9IUkguLi5GWC5VUlBVelRmLkJIeC54V3R2QUZkOEQuLi4uLi4udk9ZbmtBLjcwSGl3d1hGQS4uei52SENQR0RPWS4uZUFSTGdMbFEuLi4uLi4uLlN3d1hCLnZXeHZoQmlZRC4ubkMuay52UC4zaUEuN2tLaXd2WEZBLi56Zi4uQ0xGQ09RLi5lQVJLZUxsUS4uLi4uLi4ueXd3WEIuZldDOEVPeEhpTHhIZkNoREIuLmpBRkhFalRQQUJIZi5oTGYzeldGMHdYZnNELjIudlIuamkuaVEuLllqQUM4TDFYaUF2TC4uLi40LlBVQi5QSGVZVEdpTTFYLi5DLmQuUGIubkVBLkhTRkxYelhaRUYueS4uLi5qQ0VpSVAuYjdrUWNMRlhPQS5MLkxELkFQZlZELmZIWXZQSGlNVk4uTEMuLi5QTkhMbC4ublBBRlhmTHhIaUxWelJJcFhCSVhmQVVSY0VIZi5CSGYuQkhlMEFFeEwxVy4uUEouTEEueWd3VUIudldUUGdMaThFLi4uLi4uLnYuLkxsLi43VUdUSHlYZUEuLi4uLi4uckNGWUkuLmVRQUV4TDFXLi4uLi4uLi42ZnZYQi52V3hMaFNpc0QuLmJoTS5Mdk5YN0NHLi5WRllMelhLQS4uLi4uLi5MRUJpSS4uZE16VzdIaUx4SENBRmpnQUMuLk5YVGpLcy5VUkE0elNmLnhYUFlnVmlNMVguLi4uLi4uTi4ubC54M0VUVm4wWGlNRi4uLi4uLmZDLmZJLi5kQWtFWk0xWGlBLi4uLi4uZkEuWC4udlZQWWlUaU0xWC4uLi4uLi5WLi5sLngzRUVWbjBYaUVGLi4uZkIuZi4uaUlQLmRBa0VaTTFYaUEuLi4uLi5uLnZYLi52UlBzRE94SGlMeDdRLklIVkNsZkFGSEVUU004alNESUNIZkwxWGlNMVhQQUUuaUFmRy4uRy5pSS4uaTR6WGlNRi4uLi4uLi4uLjMudlhCLnZYN0wxWGlBLi4uLi4uLi4uLi5uQ0F4TEZPaU0xWC4uLi4uLi4uLmZDLmlRZkxpTTFYaU0xWGlBZkpCWHYuMy5mUy4udlhpTTFYaU0xWC4uLi4uNy5iLkxGLi5MMVhpTWxMeEhpTEQzdkhGVC4uSWZRUXQ3alRHRWpTZkhDSE44a1FjTEZYS0F2TS5yRC40SHZYRC5QRll2UE9pTTFYLkxDLi4uUE4uVGsuLkR4V0Ywd1hpTUYudi5mRy5ERy5aUS4ueGpBQ0ZNbFZnQXZMLi4uLjRQd1hCRC5HZVlUR2lBMVMuLkMuQ0FQLkRuRUEuSFJGTER4WGlrQy55Li4uLmpDQmlJLi5KVGZBRkhpTHhIaUVzVGhKbFBCRlhQa1RXQUJIZi5CSGYuaFNlWVRHaUExUi5iQy5LQVBOQkxGQS5qUUZMenlYaU1GLnkuLi4uakMuVUkuLmc3a1FjTDFYaUEuTC4zQS53QWZWRC5mTFl2ZlFpb1VYLkxDLi4uUE5UTGwuQXZ3V0Ywd1hmOEQudi52UC5ELkFaUS4uaGpBQ2dMMVg0LnZMLi4uLjRmdlhCLmZCRVhmQXhIaUx4WFFLa25oSWpmQUZUSTBVZi5CSGYuQkhmM3pXRjB3WGZzRC4yLnZSLmppLmlRLi5ZakFDOEwxWGlBdkwuLi4uNC5QVUIuUEhlWVRHaU0xWC4uQy5kLlBiLm5FQS5IU0ZMWHpYWkVGLnkuLi4uakNFaUlQLmI3a1FjTEZYT0EuTC5MRC5BUGZWRC5mSFl2UEhpTVZOLkxDLi4uUE5ITGwuLm5QQUZYZkx4SGlMVnpSSXBYQklYZkFVUmNFSGYuQkhmLkJITjhrUWNMRlhLQXZNLnJELjRIdlhELlBGWXZQT2lNMVguTEMuLi5QTi5Uay4uRHhXRjB3WGlNRi52LmZHLkRHLlpRLi54akFDRk1sVmdBdkwuLi4uNFB3WEJELkdlWVRHaUExUy4uQy5DQVAuRG5FQS5IUkZMRHhYaWtDLnkuLi4uakNCaUkuLkpUZkFGSGlMeEhpRXNUaEpsUEJGWFBrVFdBQkhmLkJIZi5CVmFQd1BpWUQuLi4uLi4uUE9MVERFLmYwRlRMelhGQVBYLi4uLi5QRUVKWS4uNlR5TENNbEsuLmZJLkhELnRQZ08yM0RWYVB3UGlZRC4uLi4uLi4uYy5MbC4uLkZIaExsV0xBLi4uLi4uLnJEQmZZLi5Yc0FFQ01sUS4uLi4uLi4uRS4uU0JIdlhpTTFYeEhpTHhiLkJpLi4uLkRDQ1B3VFJOY0RIZi5CSEE0eldGMHdYZnNELjIudlIuamkuaVEuLllqQUM4TDFYaUF2TC4uLi40LlBVQi5QSGVZVEdpTTFYLi5DLmQuUGIubkVBLkhTRkxYelhaRUYueS4uLi5qQ0VpSVAuYjdrUWNMRlhPQS5MLkxELkFQZlZELmZIWXZQSGlNVk4uTEMuLi5QTkhMbC4ublBBRlhmTHhIaUxWelJJcFhCSVhmQVVSY0VIZi5CSGYuQkhnc1JEaUxGTi4uLi4uLi4uOVB3VGguUFhXRHdIaWdCLi4uLi4uLlBPSDNoQy5ERkZRTHhYbi4uLi4uLi4uckNCRkkuLmI4UU1STWxMLi4uLi4uLi4zUHZYQi5QWFdJd0hpQS4uLi4uLi4uZk5IWDBBLnowUjFIMFguLi4uLi4uLi5yQ0RlWS4uaU0xWGlNaUx4SFMuSExCLi4uUExMWFRhUmcxYWpVMWJ3ZmlXaUFQVWlNRi4uSEIubkguTy5Yay4uM2tJaFB6VTIuLi4uLi4uRHJERjBYQS5lMGlMTk1GLi4uLi4uLi5DQ3ZRVy5ILlRGTXhNaW9FLi4uLi4uZmZQTExsLi5MVlVoWHlYY0EuLmYuLi5CSEVCS0kuLlpVRUUxTFZXLi4uLi4udi54UHZYQi52UlBzRE94SGlMeHJ2QVEuLi4uZkFGZnpoVEg4RFFFTVVLZjN6V0Ywd1hmc0QuMi52Ui5qaS5pUS4uWWpBQzhMMVhpQXZMLi4uLjQuUFVCLlBIZVlUR2lNMVguLkMuZC5QYi5uRUEuSFNGTFh6WFpFRi55Li4uLmpDRWlJUC5iN2tRY0xGWE9BLkwuTEQuQVBmVkQuZkhZdlBIaU1WTi5MQy4uLlBOSExsLi5uUEFGWGZMeEhpTFZ6UklwWEJJWGZBVVJjRUhmLkJIZi5CSE44a1FjTEZYS0F2TS5yRC40SHZYRC5QRll2UE9pTTFYLkxDLi4uUE4uVGsuLkR4V0Ywd1hpTUYudi5mRy5ERy5aUS4ueGpBQ0ZNbFZnQXZMLi4uLjRQd1hCRC5HZVlUR2lBMVMuLkMuQ0FQLkRuRUEuSFJGTER4WGlrQy55Li4uLmpDQmlJLi5KVGZBRkhpTHhIaUVzVGhKbFBCRlhQa1RXQUJIZi5CSGYuaFNlWVRHaUExUi5iQy5LQVBOQkxGQS5qUUZMenlYaU1GLnkuLi4uakMuVUkuLmc3a1FjTDFYaUEuTC4zQS53QWZWRC5mTFl2ZlFpb1VYLkxDLi4uUE5UTGwuQXZ3V0Ywd1hmOEQudi52UC5ELkFaUS4uaGpBQ2dMMVg0LnZMLi4uLjRmdlhCLmZCRVhmQXhIaUx4WFFLa25oSWpmQUZUSTBVZi5CSGYuQkhmM3pXRjB3WGZzRC4yLnZSLmppLmlRLi5ZakFDOEwxWGlBdkwuLi4uNC5QVUIuUEhlWVRHaU0xWC4uQy5kLlBiLm5FQS5IU0ZMWHpYWkVGLnkuLi4uakNFaUlQLmI3a1FjTEZYT0EuTC5MRC5BUGZWRC5mSFl2UEhpTVZOLkxDLi4uUE5ITGwuLm5QQUZYZkx4SGlMVnpSSXBYQklYZkFVUmNFSGYuQkhmLkJITjhrUWNMRlhLQXZNLnJELjRIdlhELlBGWXZQT2lNMVguTEMuLi5QTi5Uay4uRHhXRjB3WGlNRi52LmZHLkRHLlpRLi54akFDRk1sVmdBdkwuLi4uNFB3WEJELkdlWVRHaUExUy4uQy5DQVAuRG5FQS5IUkZMRHhYaWtDLnkuLi4uakNCaUkuLkpUZkFGSGlMeEhpRXNUaEpsUEJGWFBrVFdBQkhmLkJIZi5oU2VZVEdpQTFSLmJDLktBUE5CTEZBLmpRRkx6eVhpTUYueS4uLi5qQy5VSS4uZzdrUWNMMVhpQS5MLjNBLndBZlZELmZMWXZmUWlvVVguTEMuLi5QTlRMbC5BdndXRjB3WGY4RC52LnZQLkQuQVpRLi5oakFDZ0wxWDQudkwuLi4uNGZ2WEIuZkJFWGZBeEhpTHhYUUtrbmhJamZBRlRJMFVmLkJIZi5CSGYzeldGMHdYZnNELjIudlIuamkuaVEuLllqQUM4TDFYaUF2TC4uLi40LlBVQi5QSGVZVEdpTTFYLi5DLmQuUGIubkVBLkhTRkxYelhaRUYueS4uLi5qQ0VpSVAuYjdrUWNMRlhPQS5MLkxELkFQZlZELmZIWXZQSGlNVk4uTEMuLi5QTkhMbC4ublBBRlhmTHhIaUxWelJJcFhCSVhmQVVSY0VIZi5CSGYuQkhOOGtRY0xGWEtBdk0uckQuNEh2WEQuUEZZdlBPaU0xWC5MQy4uLlBOLlRrLi5EeFdGMHdYaU1GLnYuZkcuREcuWlEuLnhqQUNGTWxWZ0F2TC4uLi40UHdYQkQuR2VZVEdpQTFTLi5DLkNBUC5EbkVBLkhSRkxEeFhpa0MueS4uLi5qQ0JpSS4uSlRmQUZIaUx4SGlFc1RoSmxQQkZYUGtUV0FCSGYuQkhmLmhTZVlUR2lBMVIuYkMuS0FQTkJMRkEualFGTHp5WGlNRi55Li4uLmpDLlVJLi5nN2tRY0wxWGlBLkwuM0Eud0FmVkQuZkxZdmZRaW9VWC5MQy4uLlBOVExsLkF2d1dGMHdYZjhELnYudlAuRC5BWlEuLmhqQUNnTDFYNC52TC4uLi40ZnZYQi5mQkVYZkF4SGlMeFhRS2tuaElqZkFGVEkwVWYuQkhmLkJIZjN6V0Ywd1hmc0QuMi52Ui5qaS5pUS4uWWpBQzhMMVhpQXZMLi4uLjQuUFVCLlBIZVlUR2lNMVguLkMuZC5QYi5uRUEuSFNGTFh6WFpFRi55Li4uLmpDRWlJUC5iN2tRY0xGWE9BLkwuTEQuQVBmVkQuZkhZdlBIaU1WTi5MQy4uLlBOSExsLi5uUEFGWGZMeEhpTFZ6UklwWEJJWGZBVVJjRUhmLkJIZi5CSFlNbE1idkNYLi4uSC4uLi42LndSOVh4WFBnd0lpa2tQLmZoQUlMLk5EREVGLmp5WFJ2QVZpQS4uYy4uLi52Q0VLSVAuQk1sUHpYVFcuLnZKLi4uQzZ2d1hQZnZYTmtpTFBNRk8uekEuLi52TmJURUFpUXlYaXZCUGlBLi4uLi4uLnZDR2lRLi5pTTFYaUlpTHhIeUFMVEIuQy5QSExQRVowMGxYdmsxWHFJaVNlWVRHaUExUi5iQy5LQVBOQkxGQS5qUUZMenlYaU1GLnkuLi4uakMuVUkuLmc3a1FjTDFYaUEuTC4zQS53QWZWRC5mTFl2ZlFpb1VYLkxDLi4uUE5UTGwuQXZ3V0Ywd1hmOEQudi52UC5ELkFaUS4uaGpBQ2dMMVg0LnZMLi4uLjRmdlhCLmZCRVhmQXhIaUx4WFFLa25oSWpmQUZUSTBVZi5CSGYuQkhmM3pXRjB3WGZzRC4yLnZSLmppLmlRLi5ZakFDOEwxWGlBdkwuLi4uNC5QVUIuUEhlWVRHaU0xWC4uQy5kLlBiLm5FQS5IU0ZMWHpYWkVGLnkuLi4uakNFaUlQLmI3a1FjTEZYT0EuTC5MRC5BUGZWRC5mSFl2UEhpTVZOLkxDLi4uUE5ITGwuLm5QQUZYZkx4SGlMVnpSSXBYQklYZkFVUmNFSGYuQkhmLkJITjhrUWNMRlhLQXZNLnJELjRIdlhELlBGWXZQT2lNMVguTEMuLi5QTi5Uay4uRHhXRjB3WGlNRi52LmZHLkRHLlpRLi54akFDRk1sVmdBdkwuLi4uNFB3WEJELkdlWVRHaUExUy4uQy5DQVAuRG5FQS5IUkZMRHhYaWtDLnkuLi4uakNCaUkuLkpUZkFGSGlMeEhpRXNUaEpsUEJGWFBrVFdBQkhmLkJIZi54WEFBLi5OQS4uLi4uLi4uLk5QTDFILkwxUzIuLlguLi4uLi4uLi5mQ0JPWXZDWmdFT0pJRUwuLlBNLjMuLjN2ZlNHUHdXRkVDU2l3RS4uLi4uLi52TkhMbC5BamtURkF2WHYuLi4wLmZDLmZDQ1RnZkJld0NLeExGVy4uLi4uLi4uNWZ2WEEudlhpTTFYeEhpTHhYLkJoREIuLmZBTENnVFJQTUVIeC5CSGZMRlJUUFFWdi4uLjEuLi4uakMuaXNQS2k4VU9LTUZXLi4uLi4uLi40LnZYR1h4WEhRQUVZQUMuLlhDLi4uUE4uTDFCMUwxVzhyelhiQS4uLi4uLi5qQy5pOGdJaWdERVRqRUwuLmZNLi4uLjQudlhLWHlYZTB5Uml3RS4uLi4uLi5QTlBMMUFsMzBQZXdpTHhIaUxFbi4uLi4uLjBReFByRWxja01HSGYuQkhpMGpMVUxWWERBdkMuLi5BQUFQSlZIdlhXMFFKaXNBLi43Li4uUFBNLkRrQURMbE54SHlYYS4uLk8uLi5ELkUuaUFmLmkwalRrTEYuLi4uLi4uLi40Zi5PQWZ5WGlNMVhpTUYuLi4uLi4uLk4uckQuLkwxSWt2eFguLi4uLi4uLi52Qy5hQS4uaElsWGhJaUx4SENET0QuLi4uVS5YTHpTTmNUUFNBQkhmSGlTZVlUR2lBMVIuYkMuS0FQTkJMRkEualFGTHp5WGlNRi55Li4uLmpDLlVJLi5nN2tRY0wxWGlBLkwuM0Eud0FmVkQuZkxZdmZRaW9VWC5MQy4uLlBOVExsLkF2d1dGMHdYZjhELnYudlAuRC5BWlEuLmhqQUNnTDFYNC52TC4uLi40ZnZYQi5mQkVYZkF4SGlMeFhRS2tuaElqZkFGVEkwVWYuQkhmLkJIZmZ2OCIgYmFzZTY0OnByb2dyYW09IjE2MS5ZTWxNYnZDWC4uLkguLi4uLkwuLkRyRC5lWHhBaUFFRm1MVlZCQS5KRmp2Li4uLi5BREUuTC52QTRMbERiZjBYLi5QRy4uLi4uUC4uRXJELkFEdkFCTWxQelhUVy4udkouLi4uQ0wuLkdMRi5IZnZBaTRUTnguMFg3LlBHLi4uLi5MLi5HVEUuQkwxQXpMMUhyLnpYLi4uLi4uLi4uUC4uR0xGLkIudkFpTTFYaUlpTHhIeUFERFBJLkwuLkEuZi5MUEVaMDBsWHZrMVhxSUNoSGhIaEhoSCIvPjxtaWRpQ0MvPjwvZGV4ZWRTdGF0ZT4AAAAAAAAAAABKVUNFUHJpdmF0ZURhdGEAAQFCeXBhc3MAAQEDAB0AAAAAAAAASlVDRVByaXZhdGVEYXRhTGlzdAEAAABDb21wMAAAAAAAAABUGAAAAAAAAA==</chunk>
+        </vst3>
+        <Controllable name="Cutoff" id="573" flags="" value="0" parameter="0"/>
+        <Controllable name="Resonance" id="575" flags="" value="0" parameter="1"/>
+        <Controllable name="Output" id="577" flags="" value="0" parameter="2"/>
+        <Controllable name="MonoMode" id="579" flags="" value="0" parameter="3"/>
+        <Controllable name="MASTER TUNE ADJ" id="581" flags="" value="0" parameter="4"/>
+        <Controllable name="ALGORITHM" id="583" flags="" value="0.22580644488334656" parameter="5"/>
+        <Controllable name="FEEDBACK" id="585" flags="" value="0.57142859697341919" parameter="6"/>
+        <Controllable name="OSC KEY SYNC" id="587" flags="" value="0" parameter="7"/>
+        <Controllable name="LFO SPEED" id="589" flags="" value="0.37373736500740051" parameter="8"/>
+        <Controllable name="LFO DELAY" id="591" flags="" value="0" parameter="9"/>
+        <Controllable name="LFO PM DEPTH" id="593" flags="" value="0.030303031206130981" parameter="10"/>
+        <Controllable name="LFO AM DEPTH" id="595" flags="" value="0" parameter="11"/>
+        <Controllable name="LFO KEY SYNC" id="597" flags="" value="0" parameter="12"/>
+        <Controllable name="LFO WAVE" id="599" flags="" value="0" parameter="13"/>
+        <Controllable name="TRANSPOSE" id="601" flags="" value="0.25" parameter="14"/>
+        <Controllable name="P MODE SENS." id="603" flags="" value="0.28571429848670959" parameter="15"/>
+        <Controllable name="PITCH EG RATE 1" id="605" flags="" value="0" parameter="16"/>
+        <Controllable name="PITCH EG RATE 2" id="607" flags="" value="0" parameter="17"/>
+        <Controllable name="PITCH EG RATE 3" id="609" flags="" value="0" parameter="18"/>
+        <Controllable name="PITCH EG RATE 4" id="611" flags="" value="0" parameter="19"/>
+        <Controllable name="PITCH EG LEVEL 1" id="613" flags="" value="0" parameter="20"/>
+        <Controllable name="PITCH EG LEVEL 2" id="615" flags="" value="0" parameter="21"/>
+        <Controllable name="PITCH EG LEVEL 3" id="617" flags="" value="0" parameter="22"/>
+        <Controllable name="PITCH EG LEVEL 4" id="619" flags="" value="0" parameter="23"/>
+        <Controllable name="OP1 EG RATE 1" id="621" flags="" value="0.52525252103805542" parameter="24"/>
+        <Controllable name="OP1 EG RATE 2" id="623" flags="" value="1" parameter="25"/>
+        <Controllable name="OP1 EG RATE 3" id="625" flags="" value="0.35353535413742065" parameter="26"/>
+        <Controllable name="OP1 EG RATE 4" id="627" flags="" value="0.4444444477558136" parameter="27"/>
+        <Controllable name="OP1 EG LEVEL 1" id="629" flags="" value="0.64646464586257935" parameter="28"/>
+        <Controllable name="OP1 EG LEVEL 2" id="631" flags="" value="1" parameter="29"/>
+        <Controllable name="OP1 EG LEVEL 3" id="633" flags="" value="0" parameter="30"/>
+        <Controllable name="OP1 EG LEVEL 4" id="635" flags="" value="0" parameter="31"/>
+        <Controllable name="OP1 OUTPUT LEVEL" id="637" flags="" value="0" parameter="32"/>
+        <Controllable name="OP1 MODE" id="639" flags="" value="0" parameter="33"/>
+        <Controllable name="OP1 F COARSE" id="641" flags="" value="0.064516127109527588" parameter="34"/>
+        <Controllable name="OP1 F FINE" id="643" flags="" value="0" parameter="35"/>
+        <Controllable name="OP1 OSC DETUNE" id="645" flags="" value="0" parameter="36"/>
+        <Controllable name="OP1 BREAK POINT" id="647" flags="" value="0" parameter="37"/>
+        <Controllable name="OP1 L SCALE DEPTH" id="649" flags="" value="0" parameter="38"/>
+        <Controllable name="OP1 R SCALE DEPTH" id="651" flags="" value="0" parameter="39"/>
+        <Controllable name="OP1 L KEY SCALE" id="653" flags="" value="0" parameter="40"/>
+        <Controllable name="OP1 R KEY SCALE" id="655" flags="" value="0" parameter="41"/>
+        <Controllable name="OP1 RATE SCALING" id="657" flags="" value="0.57142859697341919" parameter="42"/>
+        <Controllable name="OP1 A MOD SENS." id="659" flags="" value="0" parameter="43"/>
+        <Controllable name="OP1 KEY VELOCITY" id="661" flags="" value="1" parameter="44"/>
+        <Controllable name="OP1 SWITCH" id="663" flags="" value="0" parameter="45"/>
+        <Controllable name="OP2 EG RATE 1" id="665" flags="" value="1" parameter="46"/>
+        <Controllable name="OP2 EG RATE 2" id="667" flags="" value="0.78787881135940552" parameter="47"/>
+        <Controllable name="OP2 EG RATE 3" id="669" flags="" value="0.57575756311416626" parameter="48"/>
+        <Controllable name="OP2 EG RATE 4" id="671" flags="" value="0.50505048036575317" parameter="49"/>
+        <Controllable name="OP2 EG LEVEL 1" id="673" flags="" value="0.80808079242706299" parameter="50"/>
+        <Controllable name="OP2 EG LEVEL 2" id="675" flags="" value="0" parameter="51"/>
+        <Controllable name="OP2 EG LEVEL 3" id="677" flags="" value="0.60606062412261963" parameter="52"/>
+        <Controllable name="OP2 EG LEVEL 4" id="679" flags="" value="0" parameter="53"/>
+        <Controllable name="OP2 OUTPUT LEVEL" id="681" flags="" value="0.85858583450317383" parameter="54"/>
+        <Controllable name="OP2 MODE" id="683" flags="" value="0" parameter="55"/>
+        <Controllable name="OP2 F COARSE" id="685" flags="" value="0.064516127109527588" parameter="56"/>
+        <Controllable name="OP2 F FINE" id="687" flags="" value="1" parameter="57"/>
+        <Controllable name="OP2 OSC DETUNE" id="689" flags="" value="0" parameter="58"/>
+        <Controllable name="OP2 BREAK POINT" id="691" flags="" value="0.29292929172515869" parameter="59"/>
+        <Controllable name="OP2 L SCALE DEPTH" id="693" flags="" value="0" parameter="60"/>
+        <Controllable name="OP2 R SCALE DEPTH" id="695" flags="" value="0" parameter="61"/>
+        <Controllable name="OP2 L KEY SCALE" id="697" flags="" value="0" parameter="62"/>
+        <Controllable name="OP2 R KEY SCALE" id="699" flags="" value="0" parameter="63"/>
+        <Controllable name="OP2 RATE SCALING" id="701" flags="" value="0.4285714328289032" parameter="64"/>
+        <Controllable name="OP2 A MOD SENS." id="703" flags="" value="0" parameter="65"/>
+        <Controllable name="OP2 KEY VELOCITY" id="705" flags="" value="1" parameter="66"/>
+        <Controllable name="OP2 SWITCH" id="707" flags="" value="0" parameter="67"/>
+        <Controllable name="OP3 EG RATE 1" id="709" flags="" value="0.66666668653488159" parameter="68"/>
+        <Controllable name="OP3 EG RATE 2" id="711" flags="" value="1" parameter="69"/>
+        <Controllable name="OP3 EG RATE 3" id="713" flags="" value="0.66666668653488159" parameter="70"/>
+        <Controllable name="OP3 EG RATE 4" id="715" flags="" value="0.52525252103805542" parameter="71"/>
+        <Controllable name="OP3 EG LEVEL 1" id="717" flags="" value="0.70707070827484131" parameter="72"/>
+        <Controllable name="OP3 EG LEVEL 2" id="719" flags="" value="0.93939393758773804" parameter="73"/>
+        <Controllable name="OP3 EG LEVEL 3" id="721" flags="" value="0" parameter="74"/>
+        <Controllable name="OP3 EG LEVEL 4" id="723" flags="" value="0" parameter="75"/>
+        <Controllable name="OP3 OUTPUT LEVEL" id="725" flags="" value="0" parameter="76"/>
+        <Controllable name="OP3 MODE" id="727" flags="" value="0" parameter="77"/>
+        <Controllable name="OP3 F COARSE" id="729" flags="" value="0.25806450843811035" parameter="78"/>
+        <Controllable name="OP3 F FINE" id="731" flags="" value="0.080808080732822418" parameter="79"/>
+        <Controllable name="OP3 OSC DETUNE" id="733" flags="" value="0" parameter="80"/>
+        <Controllable name="OP3 BREAK POINT" id="735" flags="" value="0.43434342741966248" parameter="81"/>
+        <Controllable name="OP3 L SCALE DEPTH" id="737" flags="" value="0" parameter="82"/>
+        <Controllable name="OP3 R SCALE DEPTH" id="739" flags="" value="0" parameter="83"/>
+        <Controllable name="OP3 L KEY SCALE" id="741" flags="" value="0" parameter="84"/>
+        <Controllable name="OP3 R KEY SCALE" id="743" flags="" value="1" parameter="85"/>
+        <Controllable name="OP3 RATE SCALING" id="745" flags="" value="0.4285714328289032" parameter="86"/>
+        <Controllable name="OP3 A MOD SENS." id="747" flags="" value="0" parameter="87"/>
+        <Controllable name="OP3 KEY VELOCITY" id="749" flags="" value="1" parameter="88"/>
+        <Controllable name="OP3 SWITCH" id="751" flags="" value="0" parameter="89"/>
+        <Controllable name="OP4 EG RATE 1" id="753" flags="" value="0.57575756311416626" parameter="90"/>
+        <Controllable name="OP4 EG RATE 2" id="755" flags="" value="1" parameter="91"/>
+        <Controllable name="OP4 EG RATE 3" id="757" flags="" value="0.18181818723678589" parameter="92"/>
+        <Controllable name="OP4 EG RATE 4" id="759" flags="" value="0.28282827138900757" parameter="93"/>
+        <Controllable name="OP4 EG LEVEL 1" id="761" flags="" value="0.8888888955116272" parameter="94"/>
+        <Controllable name="OP4 EG LEVEL 2" id="763" flags="" value="0" parameter="95"/>
+        <Controllable name="OP4 EG LEVEL 3" id="765" flags="" value="0" parameter="96"/>
+        <Controllable name="OP4 EG LEVEL 4" id="767" flags="" value="0" parameter="97"/>
+        <Controllable name="OP4 OUTPUT LEVEL" id="769" flags="" value="0.75757575035095215" parameter="98"/>
+        <Controllable name="OP4 MODE" id="771" flags="" value="0" parameter="99"/>
+        <Controllable name="OP4 F COARSE" id="773" flags="" value="0.032258063554763794" parameter="100"/>
+        <Controllable name="OP4 F FINE" id="775" flags="" value="0.010101010091602802" parameter="101"/>
+        <Controllable name="OP4 OSC DETUNE" id="777" flags="" value="0" parameter="102"/>
+        <Controllable name="OP4 BREAK POINT" id="779" flags="" value="0.29292929172515869" parameter="103"/>
+        <Controllable name="OP4 L SCALE DEPTH" id="781" flags="" value="0" parameter="104"/>
+        <Controllable name="OP4 R SCALE DEPTH" id="783" flags="" value="0" parameter="105"/>
+        <Controllable name="OP4 L KEY SCALE" id="785" flags="" value="0" parameter="106"/>
+        <Controllable name="OP4 R KEY SCALE" id="787" flags="" value="0" parameter="107"/>
+        <Controllable name="OP4 RATE SCALING" id="789" flags="" value="0.57142859697341919" parameter="108"/>
+        <Controllable name="OP4 A MOD SENS." id="791" flags="" value="0" parameter="109"/>
+        <Controllable name="OP4 KEY VELOCITY" id="793" flags="" value="0.71428573131561279" parameter="110"/>
+        <Controllable name="OP4 SWITCH" id="795" flags="" value="0" parameter="111"/>
+        <Controllable name="OP5 EG RATE 1" id="797" flags="" value="1" parameter="112"/>
+        <Controllable name="OP5 EG RATE 2" id="799" flags="" value="0.80808079242706299" parameter="113"/>
+        <Controllable name="OP5 EG RATE 3" id="801" flags="" value="0.24242424964904785" parameter="114"/>
+        <Controllable name="OP5 EG RATE 4" id="803" flags="" value="0.39393940567970276" parameter="115"/>
+        <Controllable name="OP5 EG LEVEL 1" id="805" flags="" value="1" parameter="116"/>
+        <Controllable name="OP5 EG LEVEL 2" id="807" flags="" value="0.89898991584777832" parameter="117"/>
+        <Controllable name="OP5 EG LEVEL 3" id="809" flags="" value="0.66666668653488159" parameter="118"/>
+        <Controllable name="OP5 EG LEVEL 4" id="811" flags="" value="0" parameter="119"/>
+        <Controllable name="OP5 OUTPUT LEVEL" id="813" flags="" value="0.81818181276321411" parameter="120"/>
+        <Controllable name="OP5 MODE" id="815" flags="" value="0" parameter="121"/>
+        <Controllable name="OP5 F COARSE" id="817" flags="" value="0.38709676265716553" parameter="122"/>
+        <Controllable name="OP5 F FINE" id="819" flags="" value="0" parameter="123"/>
+        <Controllable name="OP5 OSC DETUNE" id="821" flags="" value="0" parameter="124"/>
+        <Controllable name="OP5 BREAK POINT" id="823" flags="" value="0.40404039621353149" parameter="125"/>
+        <Controllable name="OP5 L SCALE DEPTH" id="825" flags="" value="0.060606062412261963" parameter="126"/>
+        <Controllable name="OP5 R SCALE DEPTH" id="827" flags="" value="0.090909093618392944" parameter="127"/>
+        <Controllable name="OP5 L KEY SCALE" id="829" flags="" value="1" parameter="128"/>
+        <Controllable name="OP5 R KEY SCALE" id="831" flags="" value="0" parameter="129"/>
+        <Controllable name="OP5 RATE SCALING" id="833" flags="" value="0" parameter="130"/>
+        <Controllable name="OP5 A MOD SENS." id="835" flags="" value="0" parameter="131"/>
+        <Controllable name="OP5 KEY VELOCITY" id="837" flags="" value="0.1428571492433548" parameter="132"/>
+        <Controllable name="OP5 SWITCH" id="839" flags="" value="0" parameter="133"/>
+        <Controllable name="OP6 EG RATE 1" id="841" flags="" value="0.89898991584777832" parameter="134"/>
+        <Controllable name="OP6 EG RATE 2" id="843" flags="" value="1" parameter="135"/>
+        <Controllable name="OP6 EG RATE 3" id="845" flags="" value="0.54545456171035767" parameter="136"/>
+        <Controllable name="OP6 EG RATE 4" id="847" flags="" value="0.28282827138900757" parameter="137"/>
+        <Controllable name="OP6 EG LEVEL 1" id="849" flags="" value="0.60606062412261963" parameter="138"/>
+        <Controllable name="OP6 EG LEVEL 2" id="851" flags="" value="0.96969699859619141" parameter="139"/>
+        <Controllable name="OP6 EG LEVEL 3" id="853" flags="" value="0" parameter="140"/>
+        <Controllable name="OP6 EG LEVEL 4" id="855" flags="" value="0" parameter="141"/>
+        <Controllable name="OP6 OUTPUT LEVEL" id="857" flags="" value="0.75757575035095215" parameter="142"/>
+        <Controllable name="OP6 MODE" id="859" flags="" value="0" parameter="143"/>
+        <Controllable name="OP6 F COARSE" id="861" flags="" value="1" parameter="144"/>
+        <Controllable name="OP6 F FINE" id="863" flags="" value="0.38383838534355164" parameter="145"/>
+        <Controllable name="OP6 OSC DETUNE" id="865" flags="" value="0" parameter="146"/>
+        <Controllable name="OP6 BREAK POINT" id="867" flags="" value="0.32323232293128967" parameter="147"/>
+        <Controllable name="OP6 L SCALE DEPTH" id="869" flags="" value="0" parameter="148"/>
+        <Controllable name="OP6 R SCALE DEPTH" id="871" flags="" value="0" parameter="149"/>
+        <Controllable name="OP6 L KEY SCALE" id="873" flags="" value="0" parameter="150"/>
+        <Controllable name="OP6 R KEY SCALE" id="875" flags="" value="0" parameter="151"/>
+        <Controllable name="OP6 RATE SCALING" id="877" flags="" value="0.4285714328289032" parameter="152"/>
+        <Controllable name="OP6 A MOD SENS." id="879" flags="" value="0" parameter="153"/>
+        <Controllable name="OP6 KEY VELOCITY" id="881" flags="" value="0.57142859697341919" parameter="154"/>
+        <Controllable name="OP6 SWITCH" id="883" flags="" value="0" parameter="155"/>
+        <Controllable name="Bypass" id="885" flags="Toggle" value="0" parameter="156"/>
+      </Processor>
+      <Processor id="532" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Automation>
+          <AutomationList automation-id="gain" id="505" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="gaincontrol" id="506" flags="GainLike" value="1.1972230672836304"/>
+      </Processor>
+      <Processor id="536" name="meter-Dexed" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="537" name="Dexed" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Dexed" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="546" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="544" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="542" flags="Toggle,RealTime" value="1"/>
+    </Route>
+    <Route version="7003" id="1834" name="Geonkick Single" default-type="midi" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" midi-playlist="1912" alignment-choice="Automatic" playback-channel-mode="AllChannels" capture-channel-mode="AllChannels" playback-channel-mask="0xffff" capture-channel-mask="0xffff" note-mode="Sustained" step-editing="0" input-active="1" restore-pgm="1">
+      <PresentationInfo order="2" flags="MidiTrack,OrderSet,TriggerTrack" color="2855877119"/>
+      <Controllable name="solo" id="1875" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="1881" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="1883" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Geonkick Single" id="1895" direction="Input" default-type="midi">
+        <Port name="Geonkick Single/midi_in 1" type="midi" direction="Input">
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset"/>
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset" other="system:midi_capture_fb36d90"/>
+        </Port>
+      </IO>
+      <IO name="Geonkick Single" id="1896" direction="Output" default-type="midi">
+        <Port name="Geonkick Single/audio_out 1" type="audio" direction="Output">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port name="Geonkick Single/audio_out 2" type="audio" direction="Output">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+        <Port name="Geonkick Single/midi_out 1" type="midi" direction="Output"/>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main,SurroundSend" muted="0"/>
+      <Controllable name="mute" id="1877" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="1879" flags="Toggle" value="0" phase-invert=""/>
+      <Automation>
+        <AutomationList automation-id="solo" id="1874" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-iso" id="1880" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-safe" id="1882" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="mute" id="1876" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-enable" id="1906" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-safe" id="1908" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="phase" id="1878" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="monitor" id="1910" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="midi-velocity" id="1916" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+      </Automation>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="1886" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="1890" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="1888" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="1892" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="1894" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="1885" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="1887" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="1889" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="1891" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="1893" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="1905" name="recorder:Geonkick Single" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="1904" name="player:Geonkick Single" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="1837" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="midi" order="1">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+        </Triggers>
+      </Processor>
+      <Processor id="1898" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="1942" name="Geonkick Single" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://geonkick.org/geonkick/single" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="midi" count="1"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="midi" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+          <Channels type="midi" count="1"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="midi" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" state-dir="state5"/>
+      </Processor>
+      <Processor id="1897" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Automation>
+          <AutomationList automation-id="gain" id="1870" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="gaincontrol" id="1871" flags="GainLike" value="1.0720440149307251"/>
+      </Processor>
+      <Processor id="1901" name="meter-Geonkick Single" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="1902" name="Geonkick Single" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Geonkick Single" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="1911" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="1909" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="1907" flags="Toggle,RealTime" value="0"/>
+    </Route>
+    <Route version="7003" id="1982" name="TAL-NoiseMaker" default-type="midi" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" midi-playlist="2060" alignment-choice="Automatic" playback-channel-mode="AllChannels" capture-channel-mode="AllChannels" playback-channel-mask="0xffff" capture-channel-mask="0xffff" note-mode="Sustained" step-editing="0" input-active="1" restore-pgm="1">
+      <PresentationInfo order="3" flags="MidiTrack,OrderSet,TriggerTrack" color="4289374975"/>
+      <Controllable name="solo" id="2023" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="2029" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="2031" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="TAL-NoiseMaker" id="2043" direction="Input" default-type="midi">
+        <Port name="TAL-NoiseMaker/midi_in 1" type="midi" direction="Input">
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset"/>
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset" other="system:midi_capture_8b36d90"/>
+        </Port>
+      </IO>
+      <IO name="TAL-NoiseMaker" id="2044" direction="Output" default-type="midi">
+        <Port name="TAL-NoiseMaker/audio_out 1" type="audio" direction="Output">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port name="TAL-NoiseMaker/audio_out 2" type="audio" direction="Output">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+        <Port name="TAL-NoiseMaker/midi_out 1" type="midi" direction="Output"/>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main,SurroundSend" muted="0"/>
+      <Controllable name="mute" id="2025" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="2027" flags="Toggle" value="0" phase-invert=""/>
+      <Automation>
+        <AutomationList automation-id="solo" id="2022" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-iso" id="2028" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-safe" id="2030" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="mute" id="2024" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-enable" id="2054" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-safe" id="2056" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="phase" id="2026" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="monitor" id="2058" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="midi-velocity" id="2064" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+      </Automation>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="2034" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="2038" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="2036" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="2040" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="2042" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="2033" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="2035" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="2037" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="2039" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="2041" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="2053" name="recorder:TAL-NoiseMaker" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="2052" name="player:TAL-NoiseMaker" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="1985" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="midi" order="2">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+        </Triggers>
+      </Processor>
+      <Processor id="2046" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="2096" name="TAL-NoiseMaker" active="1" user-latency="0" use-user-latency="0" type="vst3" unique-id="5653546E63757474616C2D6E6F697365" count="1" custom="0">
+        <Automation>
+          <AutomationList automation-id="parameter-0" id="2097" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-1" id="2099" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-2" id="2101" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-3" id="2103" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-4" id="2105" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-5" id="2107" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-6" id="2109" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-7" id="2111" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-8" id="2113" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-9" id="2115" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-10" id="2117" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-11" id="2119" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-12" id="2121" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-13" id="2123" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-14" id="2125" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-15" id="2127" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-16" id="2129" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-17" id="2131" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-18" id="2133" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-19" id="2135" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-20" id="2137" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-21" id="2139" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-22" id="2141" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-23" id="2143" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-24" id="2145" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-25" id="2147" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-26" id="2149" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-27" id="2151" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-28" id="2153" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-29" id="2155" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-30" id="2157" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-31" id="2159" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-32" id="2161" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-33" id="2163" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-34" id="2165" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-35" id="2167" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-36" id="2169" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-37" id="2171" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-38" id="2173" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-39" id="2175" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-40" id="2177" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-41" id="2179" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-42" id="2181" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-43" id="2183" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-44" id="2185" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-45" id="2187" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-46" id="2189" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-47" id="2191" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-48" id="2193" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-49" id="2195" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-50" id="2197" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-51" id="2199" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-52" id="2201" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-53" id="2203" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-54" id="2205" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-55" id="2207" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-56" id="2209" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-57" id="2211" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-58" id="2213" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-59" id="2215" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-60" id="2217" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-61" id="2219" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-62" id="2221" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-63" id="2223" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-64" id="2225" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-65" id="2227" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-66" id="2229" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-67" id="2231" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-68" id="2233" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-69" id="2235" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-70" id="2237" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-71" id="2239" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-72" id="2241" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-73" id="2243" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-74" id="2245" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-75" id="2247" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-76" id="2249" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-77" id="2251" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-78" id="2253" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-79" id="2255" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-80" id="2257" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-81" id="2259" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-82" id="2261" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-83" id="2263" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-84" id="2265" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-85" id="2267" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-86" id="2269" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-87" id="2271" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-88" id="2273" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        </Automation>
+        <ConfiguredInput>
+          <Channels type="midi" count="1"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="2"/>
+          <Channels type="midi" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+          <Channels type="midi" count="1"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="midi" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <vst3 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1">
+          <Port id="0" value="0.5"/>
+          <Port id="1" value="0.36400002241134644"/>
+          <Port id="2" value="0"/>
+          <Port id="3" value="0.31600001454353333"/>
+          <Port id="4" value="0.35600000619888306"/>
+          <Port id="5" value="1"/>
+          <Port id="6" value="0.72000002861022949"/>
+          <Port id="7" value="0"/>
+          <Port id="8" value="0"/>
+          <Port id="9" value="0"/>
+          <Port id="10" value="0.24400001764297485"/>
+          <Port id="11" value="0"/>
+          <Port id="12" value="0"/>
+          <Port id="13" value="1"/>
+          <Port id="14" value="0.35600000619888306"/>
+          <Port id="15" value="0.85600006580352783"/>
+          <Port id="16" value="0.70800000429153442"/>
+          <Port id="17" value="0"/>
+          <Port id="18" value="0.5"/>
+          <Port id="19" value="0.24200001358985901"/>
+          <Port id="20" value="0.5"/>
+          <Port id="21" value="0.48400002717971802"/>
+          <Port id="22" value="0.5480000376701355"/>
+          <Port id="23" value="0.5"/>
+          <Port id="24" value="0.75"/>
+          <Port id="25" value="0"/>
+          <Port id="26" value="0.20000000298023224"/>
+          <Port id="27" value="0"/>
+          <Port id="28" value="0.45200002193450928"/>
+          <Port id="29" value="0.53600001335144043"/>
+          <Port id="30" value="0.90000003576278687"/>
+          <Port id="31" value="0.45200002193450928"/>
+          <Port id="32" value="0"/>
+          <Port id="33" value="0.8571428656578064"/>
+          <Port id="34" value="0"/>
+          <Port id="35" value="0"/>
+          <Port id="36" value="0"/>
+          <Port id="37" value="0"/>
+          <Port id="38" value="0"/>
+          <Port id="39" value="0.5"/>
+          <Port id="40" value="0.50800001621246338"/>
+          <Port id="41" value="0.063999995589256287"/>
+          <Port id="42" value="0.58399999141693115"/>
+          <Port id="43" value="0.39600005745887756"/>
+          <Port id="44" value="0.80000001192092896"/>
+          <Port id="45" value="1"/>
+          <Port id="46" value="0"/>
+          <Port id="47" value="1"/>
+          <Port id="48" value="0"/>
+          <Port id="49" value="0"/>
+          <Port id="50" value="0"/>
+          <Port id="51" value="0"/>
+          <Port id="52" value="0"/>
+          <Port id="53" value="0"/>
+          <Port id="54" value="0"/>
+          <Port id="55" value="0.23600001633167267"/>
+          <Port id="56" value="1"/>
+          <Port id="57" value="0"/>
+          <Port id="58" value="1"/>
+          <Port id="59" value="0"/>
+          <Port id="60" value="0"/>
+          <Port id="61" value="0"/>
+          <Port id="62" value="0"/>
+          <Port id="63" value="1"/>
+          <Port id="64" value="0"/>
+          <Port id="65" value="0.50800001621246338"/>
+          <Port id="66" value="0"/>
+          <Port id="67" value="0"/>
+          <Port id="68" value="0"/>
+          <Port id="69" value="0"/>
+          <Port id="70" value="0"/>
+          <Port id="71" value="0"/>
+          <Port id="72" value="0"/>
+          <Port id="73" value="0"/>
+          <Port id="74" value="0"/>
+          <Port id="75" value="0"/>
+          <Port id="76" value="0"/>
+          <Port id="77" value="0"/>
+          <Port id="78" value="0"/>
+          <Port id="79" value="0.5"/>
+          <Port id="80" value="0"/>
+          <Port id="81" value="0"/>
+          <Port id="82" value="0"/>
+          <Port id="83" value="0"/>
+          <Port id="84" value="0"/>
+          <Port id="85" value="0.5"/>
+          <Port id="86" value="0"/>
+          <Port id="87" value="0"/>
+          <Port id="88" value="0"/>
+          <chunk>VlNUMwEAAAA1NjUzNTQ2RTYzNzU3NDc0NjE2QzJENkU2RjY5NzM2NQ4LAAAAAAAAVnN0VwAAAAgAAAABAAAAAENjbksAAArGRkJDaAAAAAJuY3V0AAUABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACi5WQzIh6QkAADw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVURi04Ij8+IDx0YWwgY3VycHJvZ3JhbT0iMCIgdmVyc2lvbj0iMS43Ij48cHJvZ3JhbXM+PHByb2dyYW0gcHJvZ3JhbW5hbWU9IkJTIERhcmsgTmlnaHQgRk4iIHVua25vd249IjAuNSIgdm9sdW1lPSIwLjM2NDAwMDAyMjQxMTM0NjQiIGZpbHRlcnR5cGU9IjAuMCIgY3V0b2ZmPSIwLjMxNjAwMDAxNDU0MzUzMzMiIHJlc29uYW5jZT0iMC4zNTYwMDAwMDYxOTg4ODMxIiBrZXlmb2xsb3c9IjEuMCIgZmlsdGVyY29udG91cj0iMC43MjAwMDAwMjg2MTAyMjk1IiBmaWx0ZXJhdHRhY2s9IjAuMCIgZmlsdGVyZGVjYXk9IjAuMCIgZmlsdGVyc3VzdGFpbj0iMC4wIiBmaWx0ZXJyZWxlYXNlPSIwLjI0NDAwMDAxNzY0Mjk3NDkiIGFtcGF0dGFjaz0iMC4wIiBhbXBkZWNheT0iMC4wIiBhbXBzdXN0YWluPSIxLjAiIGFtcHJlbGVhc2U9IjAuMzU2MDAwMDA2MTk4ODgzMSIgb3NjMXZvbHVtZT0iMC44NTYwMDAwNjU4MDM1Mjc4IiBvc2Mydm9sdW1lPSIwLjcwODAwMDAwNDI5MTUzNDQiIG9zYzN2b2x1bWU9IjAuMCIgb3NjbWFzdGVydHVuZT0iMC41IiBvc2MxdHVuZT0iMC4yNDIwMDAwMTM1ODk4NTkiIG9zYzJ0dW5lPSIwLjUiIG9zYzFmaW5ldHVuZT0iMC40ODQwMDAwMjcxNzk3MTgiIG9zYzJmaW5ldHVuZT0iMC41NDgwMDAwMzc2NzAxMzU1IiBvc2Mxd2F2ZWZvcm09IjAuNSIgb3NjMndhdmVmb3JtPSIwLjc1IiBvc2NzeW5jPSIwLjAiIGxmbzF3YXZlZm9ybT0iMC4yMDAwMDAwMDI5ODAyMzIyIiBsZm8yd2F2ZWZvcm09IjAuMCIgbGZvMXJhdGU9IjAuNDUyMDAwMDIxOTM0NTA5MyIgbGZvMnJhdGU9IjAuNTM2MDAwMDEzMzUxNDQwNCIgbGZvMWFtb3VudD0iMC45MDAwMDAwMzU3NjI3ODY5IiBsZm8yYW1vdW50PSIwLjQ1MjAwMDAyMTkzNDUwOTMiIGxmbzFkZXN0aW5hdGlvbj0iMC4wIiBsZm8yZGVzdGluYXRpb249IjAuODU3MTQyODY1NjU3ODA2NCIgbGZvMVBoYXNlPSIwLjAiIGxmbzJQaGFzZT0iMC4wIiBvc2MyZm09IjAuMCIgb3NjMnBoYXNlPSIwLjAiIG9zYzFwdz0iMC4wIiBvc2MxcGhhc2U9IjAuNSIgdHJhbnNwb3NlPSIwLjUwODAwMDAxNjIxMjQ2MzQiIGZyZWVhZGF0dGFjaz0iMC4wNjM5OTk5OTU1ODkyNTYyOSIgZnJlZWFkZGVjYXk9IjAuNTgzOTk5OTkxNDE2OTMxMiIgZnJlZWFkYW1vdW50PSIwLjM5NjAwMDA1NzQ1ODg3NzYiIGZyZWVhZGRlc3RpbmF0aW9uPSIwLjgwMDAwMDAxMTkyMDkyOSIgbGZvMXN5bmM9IjEuMCIgbGZvMWtleXRyaWdnZXI9IjAuMCIgbGZvMnN5bmM9IjEuMCIgbGZvMmtleXRyaWdnZXI9IjAuMCIgcG9ydGFtZW50bz0iMC4wIiBwb3J0YW1lbnRvbW9kZT0iMC4wIiB2b2ljZXM9IjAuMCIgdmVsb2NpdHl2b2x1bWU9IjAuMCIgdmVsb2NpdHljb250b3VyPSIwLjAiIHZlbG9jaXR5ZmlsdGVyPSIwLjAiIHBpdGNod2hlZWxjdXRvZmY9IjAuMjM2MDAwMDE2MzMxNjcyNyIgcGl0Y2h3aGVlbHBpdGNoPSIxLjAiIHJpbmdtb2R1bGF0aW9uPSIwLjAiIGNob3J1czFlbmFibGU9IjEuMCIgY2hvcnVzMmVuYWJsZT0iMC4wIiByZXZlcmJ3ZXQ9IjAuMCIgcmV2ZXJiZGVjYXk9IjAuMCIgcmV2ZXJicHJlZGVsYXk9IjAuMCIgcmV2ZXJiaGlnaGN1dD0iMS4wIiByZXZlcmJsb3djdXQ9IjAuMCIgb3NjYml0Y3J1c2hlcj0iMC41MDgwMDAwMTYyMTI0NjM0IiBoaWdocGFzcz0iMC4wIiBkZXR1bmU9IjAuMCIgdmludGFnZW5vaXNlPSIwLjAiIHBhbmljPSIwLjAiIG1pZGlsZWFybj0iMC4wIiBlbnZlbG9wZWVkaXRvcmRlc3QxPSIwLjAiIGVudmVsb3BlZWRpdG9yc3BlZWQ9IjAuMCIgZW52ZWxvcGVlZGl0b3JhbW91bnQ9IjAuMCIgZW52ZWxvcGVPbmVTaG90PSIwLjAiIGVudmVsb3BlZml4dGVtcG89IjAuMCIgZW52ZWxvcGVyZXNldD0iMC4wIiBmaWx0ZXJkcml2ZT0iMC4wIiBkZWxheXdldD0iMC4wIiBkZWxheXRpbWU9IjAuNSIgZGVsYXlzeW5jPSIwLjAiIGRlbGF5ZmFjdG9ybD0iMC4wIiBkZWxheWZhY3RvclI9IjAuMCIgZGVsYXloaWdoc2hlbGY9IjAuMCIgZGVsYXlsb3dzaGVsZj0iMC4wIiBkZWxheWZlZWRiYWNrPSIwLjUiIG1pZGljbGVhcj0iMC4wIiBtaWRpbG9jaz0iMC4wIj48c3BsaW5lUG9pbnRzPjxzcGxpbmVQb2ludCBpc1N0YXJ0UG9pbnQ9IjEiIGlzRW5kUG9pbnQ9IjAiIGNlbnRlclBvaW50WD0iMC4wIiBjZW50ZXJQb2ludFk9IjAuNSIgY29udHJvbFBvaW50TGVmdFg9IjAuMCIgY29udHJvbFBvaW50TGVmdFk9IjAuNSIgY29udHJvbFBvaW50UmlnaHRYPSIwLjEwMDAwMDAwMTQ5MDExNjEiIGNvbnRyb2xQb2ludFJpZ2h0WT0iMC41Ii8+PHNwbGluZVBvaW50IGlzU3RhcnRQb2ludD0iMCIgaXNFbmRQb2ludD0iMSIgY2VudGVyUG9pbnRYPSIxLjAiIGNlbnRlclBvaW50WT0iMC41IiBjb250cm9sUG9pbnRMZWZ0WD0iMC44OTk5OTk5NzYxNTgxNDIxIiBjb250cm9sUG9pbnRMZWZ0WT0iMC41IiBjb250cm9sUG9pbnRSaWdodFg9IjEuMCIgY29udHJvbFBvaW50UmlnaHRZPSIwLjUiLz48L3NwbGluZVBvaW50cz48L3Byb2dyYW0+PC9wcm9ncmFtcz48bWlkaW1hcC8+PC90YWw+AAAAAAAAAAAASlVDRVByaXZhdGVEYXRhAAEBQnlwYXNzAAEBAwAdAAAAAAAAAEpVQ0VQcml2YXRlRGF0YUxpc3QBAAAAQ29tcDAAAAAAAAAA3goAAAAAAAA=</chunk>
+        </vst3>
+        <Controllable name="-" id="2098" flags="" value="0.5" parameter="0"/>
+        <Controllable name="Master Volume" id="2100" flags="" value="0.36400002241134644" parameter="1"/>
+        <Controllable name="Filter Type" id="2102" flags="" value="0" parameter="2"/>
+        <Controllable name="Filter Cutoff" id="2104" flags="" value="0.31600001454353333" parameter="3"/>
+        <Controllable name="Filter Resonance" id="2106" flags="" value="0.35600000619888306" parameter="4"/>
+        <Controllable name="Filter Keyfollow" id="2108" flags="" value="1" parameter="5"/>
+        <Controllable name="Filter Contour" id="2110" flags="" value="0.72000002861022949" parameter="6"/>
+        <Controllable name="Filter Attack" id="2112" flags="" value="0" parameter="7"/>
+        <Controllable name="Filter Decay" id="2114" flags="" value="0" parameter="8"/>
+        <Controllable name="Filter Sustain" id="2116" flags="" value="0" parameter="9"/>
+        <Controllable name="Filter Release" id="2118" flags="" value="0.24400001764297485" parameter="10"/>
+        <Controllable name="Amp Attack" id="2120" flags="" value="0" parameter="11"/>
+        <Controllable name="Amp Decay" id="2122" flags="" value="0" parameter="12"/>
+        <Controllable name="Amp Sustain" id="2124" flags="" value="1" parameter="13"/>
+        <Controllable name="Amp Release" id="2126" flags="" value="0.35600000619888306" parameter="14"/>
+        <Controllable name="Osc 1 Volume" id="2128" flags="" value="0.85600006580352783" parameter="15"/>
+        <Controllable name="Osc 2 Volume" id="2130" flags="" value="0.70800000429153442" parameter="16"/>
+        <Controllable name="Osc 3 Volume" id="2132" flags="" value="0" parameter="17"/>
+        <Controllable name="Osc Mastertune" id="2134" flags="" value="0.5" parameter="18"/>
+        <Controllable name="Osc 1 Tune" id="2136" flags="" value="0.24200001358985901" parameter="19"/>
+        <Controllable name="Osc 2 Tune" id="2138" flags="" value="0.5" parameter="20"/>
+        <Controllable name="Osc 1 Fine Tune" id="2140" flags="" value="0.48400002717971802" parameter="21"/>
+        <Controllable name="Osc 2 Fine Tune" id="2142" flags="" value="0.5480000376701355" parameter="22"/>
+        <Controllable name="Osc 1 Waveform" id="2144" flags="" value="0.5" parameter="23"/>
+        <Controllable name="Osc 2 Waveform" id="2146" flags="" value="0.75" parameter="24"/>
+        <Controllable name="Osc Sync" id="2148" flags="" value="0" parameter="25"/>
+        <Controllable name="Lfo 1 Waveform" id="2150" flags="" value="0.20000000298023224" parameter="26"/>
+        <Controllable name="Lfo 2 Waveform" id="2152" flags="" value="0" parameter="27"/>
+        <Controllable name="Lfo 1 Rate" id="2154" flags="" value="0.45200002193450928" parameter="28"/>
+        <Controllable name="Lfo 2 Rate" id="2156" flags="" value="0.53600001335144043" parameter="29"/>
+        <Controllable name="Lfo 1 Amount" id="2158" flags="" value="0.90000003576278687" parameter="30"/>
+        <Controllable name="Lfo 2 Amount" id="2160" flags="" value="0.45200002193450928" parameter="31"/>
+        <Controllable name="Lfo 1 Destination" id="2162" flags="" value="0" parameter="32"/>
+        <Controllable name="Lfo 2 Destination" id="2164" flags="" value="0.8571428656578064" parameter="33"/>
+        <Controllable name="Lfo 1 Phase" id="2166" flags="" value="0" parameter="34"/>
+        <Controllable name="Lfo 2 Phase" id="2168" flags="" value="0" parameter="35"/>
+        <Controllable name="Osc 2 FM" id="2170" flags="" value="0" parameter="36"/>
+        <Controllable name="Osc 2 Phase" id="2172" flags="" value="0" parameter="37"/>
+        <Controllable name="Osc 1 PW" id="2174" flags="" value="0" parameter="38"/>
+        <Controllable name="Osc 1 Phase" id="2176" flags="" value="0.5" parameter="39"/>
+        <Controllable name="Transpose" id="2178" flags="" value="0.50800001621246338" parameter="40"/>
+        <Controllable name="Free Ad Attack" id="2180" flags="" value="0.063999995589256287" parameter="41"/>
+        <Controllable name="Free Ad Decay" id="2182" flags="" value="0.58399999141693115" parameter="42"/>
+        <Controllable name="Free Ad Amount" id="2184" flags="" value="0.39600005745887756" parameter="43"/>
+        <Controllable name="Free Ad Destination" id="2186" flags="" value="0.80000001192092896" parameter="44"/>
+        <Controllable name="Lfo 1 Sync" id="2188" flags="" value="1" parameter="45"/>
+        <Controllable name="Lfo 1 Keytrigger" id="2190" flags="" value="0" parameter="46"/>
+        <Controllable name="Lfo 2 Sync" id="2192" flags="" value="1" parameter="47"/>
+        <Controllable name="Lfo 2 Keytrigger" id="2194" flags="" value="0" parameter="48"/>
+        <Controllable name="Portamento Amount" id="2196" flags="" value="0" parameter="49"/>
+        <Controllable name="Portamento Mode" id="2198" flags="" value="0" parameter="50"/>
+        <Controllable name="Voices" id="2200" flags="" value="0" parameter="51"/>
+        <Controllable name="Velocity Volume" id="2202" flags="" value="0" parameter="52"/>
+        <Controllable name="Velocity Contour" id="2204" flags="" value="0" parameter="53"/>
+        <Controllable name="Velocity Filter" id="2206" flags="" value="0" parameter="54"/>
+        <Controllable name="Pitchwheel Cutoff" id="2208" flags="" value="0.23600001633167267" parameter="55"/>
+        <Controllable name="Pitchwheel Pitch" id="2210" flags="" value="1" parameter="56"/>
+        <Controllable name="Ringmodulation" id="2212" flags="" value="0" parameter="57"/>
+        <Controllable name="Chorus 1 Enable" id="2214" flags="" value="1" parameter="58"/>
+        <Controllable name="Chorus 2 Enable" id="2216" flags="" value="0" parameter="59"/>
+        <Controllable name="Reverb Wet" id="2218" flags="" value="0" parameter="60"/>
+        <Controllable name="Reverb Decay" id="2220" flags="" value="0" parameter="61"/>
+        <Controllable name="Reverb Pre Delay" id="2222" flags="" value="0" parameter="62"/>
+        <Controllable name="Reverb High Cut" id="2224" flags="" value="1" parameter="63"/>
+        <Controllable name="Reverb Low Cut" id="2226" flags="" value="0" parameter="64"/>
+        <Controllable name="Osc Bitcrusher" id="2228" flags="" value="0.50800001621246338" parameter="65"/>
+        <Controllable name="Master High Pass" id="2230" flags="" value="0" parameter="66"/>
+        <Controllable name="Master Detune" id="2232" flags="" value="0" parameter="67"/>
+        <Controllable name="Vintage Noise" id="2234" flags="" value="0" parameter="68"/>
+        <Controllable name="Panic" id="2236" flags="" value="0" parameter="69"/>
+        <Controllable name="MIDI LEARN" id="2238" flags="" value="0" parameter="70"/>
+        <Controllable name="Envelope Destination" id="2240" flags="" value="0" parameter="71"/>
+        <Controllable name="Envelope Speed" id="2242" flags="" value="0" parameter="72"/>
+        <Controllable name="Envelope Amount" id="2244" flags="" value="0" parameter="73"/>
+        <Controllable name="Envelope One Shot Mode" id="2246" flags="" value="0" parameter="74"/>
+        <Controllable name="Envelope Fix Tempo" id="2248" flags="" value="0" parameter="75"/>
+        <Controllable name="Envelope Reset" id="2250" flags="" value="0" parameter="76"/>
+        <Controllable name="Filter Drive" id="2252" flags="" value="0" parameter="77"/>
+        <Controllable name="Delay Wet" id="2254" flags="" value="0" parameter="78"/>
+        <Controllable name="Delay Time" id="2256" flags="" value="0.5" parameter="79"/>
+        <Controllable name="Delay Sync" id="2258" flags="" value="0" parameter="80"/>
+        <Controllable name="Delay x2 L" id="2260" flags="" value="0" parameter="81"/>
+        <Controllable name="Delay x2 R" id="2262" flags="" value="0" parameter="82"/>
+        <Controllable name="Delay High Shelf" id="2264" flags="" value="0" parameter="83"/>
+        <Controllable name="Delay Low Shelf" id="2266" flags="" value="0" parameter="84"/>
+        <Controllable name="Delay Feedback" id="2268" flags="" value="0.5" parameter="85"/>
+        <Controllable name="MIDI Clear" id="2270" flags="" value="0" parameter="86"/>
+        <Controllable name="MIDI Lock" id="2272" flags="" value="0" parameter="87"/>
+        <Controllable name="Bypass" id="2274" flags="Toggle" value="0" parameter="88"/>
+      </Processor>
+      <Processor id="2045" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Automation>
+          <AutomationList automation-id="gain" id="2018" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="gaincontrol" id="2019" flags="GainLike" value="0.8363456130027771"/>
+      </Processor>
+      <Processor id="2049" name="meter-TAL-NoiseMaker" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="2050" name="TAL-NoiseMaker" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="TAL-NoiseMaker" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="2059" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="2057" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="2055" flags="Toggle,RealTime" value="0"/>
+    </Route>
+  </Routes>
+  <Playlists>
+    <Playlist id="547" name="Dexed.1" type="midi" orig-track-id="469" pgroup-id="" shared-with-ids="" frozen="0" combine-ops="0">
+      <Region name="Take3_Dexed-4" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b15360@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1553" type="midi" first-edit="nothing" source-0="1548" master-source-0="1548"/>
+      <Region name="Take3_Dexed-5.2" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="1" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="1" tags="" contents="0" rgroup="0" id="1742" type="midi" first-edit="nothing" source-0="1557" master-source-0="1557"/>
+      <Region name="Take3_Dexed-12.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b46080" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="4540" type="midi" first-edit="nothing" source-0="4532" master-source-0="4532"/>
+    </Playlist>
+    <Playlist id="1912" name="Geonkick Single.1" type="midi" orig-track-id="1834" pgroup-id="" shared-with-ids="" frozen="0" combine-ops="0">
+      <Region name="Take3_Geonkick Single-3" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b15360@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="1" tags="" contents="0" rgroup="0" id="4069" type="midi" first-edit="nothing" source-0="4064" master-source-0="4064"/>
+      <Region name="Geonkick Single-2" muted="0" opaque="0" locked="0" video-locked="0" automatic="1" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1954" type="midi" first-edit="nothing" source-0="1949" master-source-0="1949"/>
+      <Region name="Geonkick Single-7.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b46080" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="2" tags="" contents="0" rgroup="0" id="4209" type="midi" first-edit="nothing" source-0="4191" master-source-0="4191"/>
+    </Playlist>
+    <Playlist id="2060" name="TAL-NoiseMaker.1" type="midi" orig-track-id="1982" pgroup-id="" shared-with-ids="" frozen="0" combine-ops="0">
+      <Region name="Geonkick Single-4.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="2304" type="midi" first-edit="nothing" source-0="2296" master-source-0="2296"/>
+      <Region name="Geonkick Single-8.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b46080" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="1" tags="" contents="0" rgroup="0" id="4211" type="midi" first-edit="nothing" source-0="4199" master-source-0="4199"/>
+    </Playlist>
+  </Playlists>
+  <UnusedPlaylists>
+    <Playlist id="2400" name="Geonkick Single 1.1" type="midi" orig-track-id="2491" pgroup-id="" shared-with-ids="" frozen="0" combine-ops="0">
+      <Region name="Geonkick Single-5.1" muted="0" opaque="0" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="0" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b30720@b15360" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="2404" type="midi" first-edit="nothing" source-0="2403" master-source-0="2403"/>
+    </Playlist>
+  </UnusedPlaylists>
+  <RouteGroups/>
+  <Click>
+    <IO name="Click" id="68" direction="Output" default-type="audio">
+      <Port name="Click/audio_out 1" type="audio" direction="Output">
+        <ExtConnection for="ALSA;;G535 Wireless Gaming Headset"/>
+        <ExtConnection for="ALSA;;G535 Wireless Gaming Headset" other="system:playback_1"/>
+      </Port>
+      <Port name="Click/audio_out 2" type="audio" direction="Output">
+        <ExtConnection for="ALSA;;G535 Wireless Gaming Headset"/>
+        <ExtConnection for="ALSA;;G535 Wireless Gaming Headset" other="system:playback_2"/>
+      </Port>
+    </IO>
+    <Processor id="69" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+      <Automation>
+        <AutomationList automation-id="gain" id="66" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+      </Automation>
+      <Controllable name="gaincontrol" id="67" flags="GainLike" value="1"/>
+    </Processor>
+  </Click>
+  <Speakers>
+    <Speaker azimuth="240" elevation="0" distance="1"/>
+    <Speaker azimuth="120" elevation="0" distance="1"/>
+  </Speakers>
+  <TempoMap superclocks-per-second="282240000">
+    <Tempos>
+      <Tempo npm="115.00000013581821" enpm="115.00000013581821" note-type="4" type="Constant" locked-to-meter="0" continuing="0" active="1" sclock="0" quarters="0:0" bbt="1|1|0" omega="0"/>
+    </Tempos>
+    <Meters>
+      <Meter note-value="4" divisions-per-bar="4" sclock="0" quarters="0:0" bbt="1|1|0"/>
+    </Meters>
+    <MusicTimes/>
+  </TempoMap>
+  <ControlProtocols>
+    <Protocol name="Ableton Push 2" active="0" session-state="0"/>
+    <Protocol name="ContourDesign" active="0" session-state="0"/>
+    <Protocol name="Generic MIDI" feedback="0" feedback-interval="10000" threshold="10" motorized="0" binding="AKAI MPK miniplus" active="1">
+      <Input>
+        <Port name="MIDI Control In" type="midi" direction="Input">
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset"/>
+          <ExtConnection for="ALSA;;G535 Wireless Gaming Headset" other="system:midi_capture_8b36d90"/>
+        </Port>
+      </Input>
+      <Output>
+        <Port name="MIDI Control Out" type="midi" direction="Output"/>
+      </Output>
+      <Controls/>
+    </Protocol>
+    <Protocol name="Mackie" active="0" session-state="0"/>
+    <Protocol name="Novation Launch Control XL" active="0" session-state="0"/>
+    <Protocol name="Novation LaunchPad Mini" active="0" session-state="0"/>
+    <Protocol name="Novation LaunchPad Pro" active="0" session-state="0"/>
+    <Protocol name="Novation LaunchPad X" active="0" session-state="0"/>
+    <Protocol name="Open Sound Control (OSC)" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort16" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort2" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort8" active="0" session-state="0"/>
+    <Protocol name="SSL 360: UF8 UF1" active="0" session-state="0"/>
+    <Protocol name="Softube Console1" active="0" session-state="0"/>
+    <Protocol name="Steinberg CC121" active="0" session-state="0"/>
+    <Protocol name="Tascam US-2400" active="0" session-state="0"/>
+    <Protocol name="WebSockets Server (Experimental)" active="0" session-state="0"/>
+    <Protocol name="Wiimote" active="0" session-state="0"/>
+  </ControlProtocols>
+  <Extra>
+    <AddRouteDialog LastRouteType="MidiTrack"/>
+    <RulerVisibility minsec="1" timecode="1" samples="0" bbt="1" meter="0" tempo="0" rangemarker="1" marker="1" arrangement="1" videotl="0"/>
+    <ExportRevision revision="1"/>
+    <ExportProfile>
+      <ExportTimespan format="Timecode">
+        <Range id="1489" realtime="0"/>
+      </ExportTimespan>
+      <ExportChannelConfiguration split="0" channels="2">
+        <ExportChannel type="PortExportChannel" number="1">
+          <Port name="Master/audio_out 1"/>
+        </ExportChannel>
+        <ExportChannel type="PortExportChannel" number="2">
+          <Port name="Master/audio_out 2"/>
+        </ExportChannel>
+      </ExportChannelConfiguration>
+      <ExportFormat id="dd4f6f30-f054-4e0a-8d91-67eed5d79153"/>
+      <ExportFilename>
+        <Folder relative="1" path="export"/>
+        <Field name="label" enabled="0"/>
+        <Field name="session" enabled="1"/>
+        <Field name="snapshot" enabled="0"/>
+        <Field name="timespan" enabled="1"/>
+        <Field name="revision" enabled="1"/>
+        <Field name="time" enabled="0" value="T_None"/>
+        <Field name="date" enabled="0" value="D_None"/>
+      </ExportFilename>
+    </ExportProfile>
+    <UI>
+      <Window name="key-editor" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="session-options-editor" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="speaker-config" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="about" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="add-routes" visible="0" x-off="-1" y-off="-1" x-size="668" y-size="491"/>
+      <Window name="add-video" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="inspector" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-midi-setup" visible="0" x-off="958" y-off="349" x-size="579" y-size="381"/>
+      <Window name="video-export" visible="0" x-off="385" y-off="427" x-size="301" y-size="103"/>
+      <Window name="script-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="bundle-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="locations" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="big-clock" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="big-transport" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="virtual-keyboard" visible="0" x-off="0" y-off="813" x-size="750" y-size="186"/>
+      <Window name="library-downloader" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-connection-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="midi-connection-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="luawindow" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="idle-o-meter" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="io-plugins" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="plugin-manager" visible="0" x-off="76" y-off="142" x-size="753" y-size="710"/>
+      <Window name="plugin-dsp-load" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="dsp-statistics" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="transport-masters" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-71" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-469" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-1834" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-1982" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-469-571" visible="0" x-off="70" y-off="27" x-size="374" y-size="33" custom-ui="1"/>
+      <Window name="PM-469-571" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-1834-1942" visible="0" x-off="646" y-off="0" x-size="940" y-size="738" custom-ui="1"/>
+      <Window name="PM-1834-1942" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-1982-2096" visible="0" x-off="481" y-off="0" x-size="1270" y-size="728" custom-ui="1"/>
+      <Window name="PM-1982-2096" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <GUIObjectState>
+        <Object id="rtav 71" height="64"/>
+        <Object id="automation 75" height="64" visible="0"/>
+        <Object id="automation 77" height="64" visible="0"/>
+        <Object id="automation 71 12/0/0" height="64" visible="0"/>
+        <Object id="automation 90" height="64" visible="0"/>
+        <Object id="strip 71">
+          <Object id="processor 101">
+            <Object id="control 75" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="strip 184">
+          <Object id="processor 247">
+            <Object id="control 221" visible="0"/>
+          </Object>
+          <Object id="processor 285">
+            <Object id="control 287" visible="0"/>
+            <Object id="control 289" visible="0"/>
+            <Object id="control 291" visible="0"/>
+            <Object id="control 293" visible="0"/>
+            <Object id="control 295" visible="0"/>
+            <Object id="control 297" visible="0"/>
+            <Object id="control 299" visible="0"/>
+            <Object id="control 301" visible="0"/>
+            <Object id="control 303" visible="0"/>
+            <Object id="control 305" visible="0"/>
+            <Object id="control 307" visible="0"/>
+            <Object id="control 309" visible="0"/>
+            <Object id="control 311" visible="0"/>
+            <Object id="control 313" visible="0"/>
+            <Object id="control 315" visible="0"/>
+            <Object id="control 317" visible="0"/>
+            <Object id="control 319" visible="0"/>
+            <Object id="control 321" visible="0"/>
+            <Object id="control 323" visible="0"/>
+            <Object id="control 325" visible="0"/>
+            <Object id="control 327" visible="0"/>
+            <Object id="control 329" visible="0"/>
+            <Object id="control 331" visible="0"/>
+            <Object id="control 333" visible="0"/>
+            <Object id="control 335" visible="0"/>
+            <Object id="control 337" visible="0"/>
+            <Object id="control 339" visible="0"/>
+            <Object id="control 341" visible="0"/>
+            <Object id="control 343" visible="0"/>
+            <Object id="control 345" visible="0"/>
+            <Object id="control 347" visible="0"/>
+            <Object id="control 349" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="rtav 469" height="436" midnam-custom-device-mode="General MIDI" note-range-min="49" note-range-max="72" color-mode="MeterColors" midnam-channel="Channel  1"/>
+        <Object id="automation 506" height="64" visible="0"/>
+        <Object id="automation 469 12/0/0" height="64" visible="0"/>
+        <Object id="automation 469 32/0/0" height="64" visible="0"/>
+        <Object id="strip 469">
+          <Object id="processor 532">
+            <Object id="control 506" visible="0"/>
+          </Object>
+          <Object id="processor 571">
+            <Object id="control 573" visible="0"/>
+            <Object id="control 575" visible="0"/>
+            <Object id="control 577" visible="0"/>
+            <Object id="control 579" visible="0"/>
+            <Object id="control 581" visible="0"/>
+            <Object id="control 583" visible="0"/>
+            <Object id="control 585" visible="0"/>
+            <Object id="control 587" visible="0"/>
+            <Object id="control 589" visible="0"/>
+            <Object id="control 591" visible="0"/>
+            <Object id="control 593" visible="0"/>
+            <Object id="control 595" visible="0"/>
+            <Object id="control 597" visible="0"/>
+            <Object id="control 599" visible="0"/>
+            <Object id="control 601" visible="0"/>
+            <Object id="control 603" visible="0"/>
+            <Object id="control 605" visible="0"/>
+            <Object id="control 607" visible="0"/>
+            <Object id="control 609" visible="0"/>
+            <Object id="control 611" visible="0"/>
+            <Object id="control 613" visible="0"/>
+            <Object id="control 615" visible="0"/>
+            <Object id="control 617" visible="0"/>
+            <Object id="control 619" visible="0"/>
+            <Object id="control 621" visible="0"/>
+            <Object id="control 623" visible="0"/>
+            <Object id="control 625" visible="0"/>
+            <Object id="control 627" visible="0"/>
+            <Object id="control 629" visible="0"/>
+            <Object id="control 631" visible="0"/>
+            <Object id="control 633" visible="0"/>
+            <Object id="control 635" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="automation 521" height="64" visible="0"/>
+        <Object id="rtav 1834" height="290" midnam-custom-device-mode="General MIDI" note-range-min="30" note-range-max="45" color-mode="MeterColors" midnam-channel="Channel  1"/>
+        <Object id="automation 1871" height="64" visible="0"/>
+        <Object id="automation 1834 12/0/0" height="64" visible="0"/>
+        <Object id="automation 1834 32/0/0" height="64" visible="0"/>
+        <Object id="strip 1834">
+          <Object id="processor 1897">
+            <Object id="control 1871" visible="0"/>
+          </Object>
+          <Object id="processor 1942"/>
+        </Object>
+        <Object id="automation 1886" height="64" visible="0"/>
+        <Object id="rtav 1982" height="229" midnam-custom-device-mode="General MIDI" note-range-min="42" note-range-max="62" color-mode="MeterColors" midnam-channel="Channel  1"/>
+        <Object id="automation 2019" height="64" visible="0"/>
+        <Object id="automation 1982 12/0/0" height="64" visible="0"/>
+        <Object id="automation 1982 32/0/0" height="64" visible="0"/>
+        <Object id="strip 1982">
+          <Object id="processor 2045">
+            <Object id="control 2019" visible="0"/>
+          </Object>
+          <Object id="processor 2096">
+            <Object id="control 2098" visible="0"/>
+            <Object id="control 2100" visible="0"/>
+            <Object id="control 2102" visible="0"/>
+            <Object id="control 2104" visible="0"/>
+            <Object id="control 2106" visible="0"/>
+            <Object id="control 2108" visible="0"/>
+            <Object id="control 2110" visible="0"/>
+            <Object id="control 2112" visible="0"/>
+            <Object id="control 2114" visible="0"/>
+            <Object id="control 2116" visible="0"/>
+            <Object id="control 2118" visible="0"/>
+            <Object id="control 2120" visible="0"/>
+            <Object id="control 2122" visible="0"/>
+            <Object id="control 2124" visible="0"/>
+            <Object id="control 2126" visible="0"/>
+            <Object id="control 2128" visible="0"/>
+            <Object id="control 2130" visible="0"/>
+            <Object id="control 2132" visible="0"/>
+            <Object id="control 2134" visible="0"/>
+            <Object id="control 2136" visible="0"/>
+            <Object id="control 2138" visible="0"/>
+            <Object id="control 2140" visible="0"/>
+            <Object id="control 2142" visible="0"/>
+            <Object id="control 2144" visible="0"/>
+            <Object id="control 2146" visible="0"/>
+            <Object id="control 2148" visible="0"/>
+            <Object id="control 2150" visible="0"/>
+            <Object id="control 2152" visible="0"/>
+            <Object id="control 2154" visible="0"/>
+            <Object id="control 2156" visible="0"/>
+            <Object id="control 2158" visible="0"/>
+            <Object id="control 2160" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="automation 2034" height="64" visible="0"/>
+        <Object id="strip 2491">
+          <Object id="processor 2559"/>
+          <Object id="processor 2560">
+            <Object id="control 2562" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="strip 4838">
+          <Object id="processor 4901">
+            <Object id="control 4875" visible="0"/>
+          </Object>
+        </Object>
+      </GUIObjectState>
+    </UI>
+    <Videomonitor active="0"/>
+  </Extra>
+  <Script lua="Lua 5.3">c2NyaXB0cyA9IHt9IA==</Script>
+  <IOPlugins/>
+</Session>
