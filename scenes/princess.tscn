@@ -407,7 +407,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1qape"]
 radius = 5.0
-height = 18.0
+height = 20.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fgbk"]
 size = Vector2(4, 17)
@@ -429,7 +429,7 @@ autoplay = "idle"
 frame_progress = 0.0602809
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -7)
+position = Vector2(0, -8)
 shape = SubResource("CapsuleShape2D_1qape")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
@@ -440,7 +440,7 @@ autoplay = "idle"
 frame_progress = 0.491649
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(0, -7)
+position = Vector2(0, -8)
 shape = SubResource("CapsuleShape2D_1qape")
 
 [node name="Area2D" type="Area2D" parent="."]
