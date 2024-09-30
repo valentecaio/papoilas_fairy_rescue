@@ -7,8 +7,8 @@ const stage_w := 1024
 
 signal open_hatch()
 
-var fairy_soundplayer = preload("res://scenes/fairy_sound.tscn").instantiate()
-var coin_soundplayer = preload("res://scenes/coin_sound.tscn").instantiate()
+var fairy_soundplayer = preload("res://scenes/sfx/fairy_sound.tscn").instantiate()
+var coin_soundplayer = preload("res://scenes/sfx/coin_sound.tscn").instantiate()
 
 
 ### player stats ###

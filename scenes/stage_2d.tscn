@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://scripts/enemies/horizontal.gd" id="9_vsv7h"]
 [ext_resource type="PackedScene" uid="uid://bwltm8xcx2pg1" path="res://scenes/coin.tscn" id="10_43gxp"]
 [ext_resource type="PackedScene" uid="uid://b7n5mjlgfnwwc" path="res://scenes/fairy.tscn" id="10_p7nl5"]
-[ext_resource type="PackedScene" path="res://scenes/door.tscn" id="11_obs43"]
+[ext_resource type="PackedScene" uid="uid://ck1p4v3648ajp" path="res://scenes/door.tscn" id="11_obs43"]
 [ext_resource type="FontFile" uid="uid://naxs6jj1wadg" path="res://assets/fonts/PixelOperator8.ttf" id="13_8a3q6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fxd8l"]
