@@ -10,7 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://iyd5jjk3j5gx" path="res://assets/music/princess-tower_r1_session.wav" id="7_dfrau"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="8_41grv"]
 [ext_resource type="FontFile" uid="uid://wff6hctsod50" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="10_e1my0"]
-[ext_resource type="Texture2D" uid="uid://dcd4btx7xlcks" path="res://assets/sprites/controls.png" id="11_efhjy"]
+[ext_resource type="Texture2D" uid="uid://dcdrxxv21sea" path="res://assets/sprites/controls2.png" id="11_03di8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndc6u"]
 albedo_color = Color(0, 0.4, 0.08, 1)
@@ -231,7 +231,7 @@ grow_vertical = 0
 scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(210, 220)
 localize_numeral_system = false
-texture = ExtResource("11_efhjy")
+texture = ExtResource("11_03di8")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_vptxo")
