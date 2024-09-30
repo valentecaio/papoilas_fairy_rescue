@@ -794,7 +794,7 @@ offset_right = 732.0
 offset_bottom = 313.0
 theme_override_fonts/font = ExtResource("13_8a3q6")
 theme_override_font_sizes/font_size = 8
-text = "Press W or D to
+text = "Press W or S to
 climb ladders."
 autowrap_mode = 2
 
